@@ -1,7 +1,10 @@
-import 'package:fluent_ui/fluent_ui.dart' hide Page;
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_acrylic/flutter_acrylic.dart' as flutter_acrylic;
+import 'package:flutter_acrylic/window_effect.dart';
 import 'package:get/get.dart';
+import 'package:sss_app/config/utils.dart';
+import 'package:sss_app/view/splash.dart';
 import 'package:window_manager/window_manager.dart';
 
 const String appTitle = 'Win UI for Flutter';
@@ -27,21 +30,20 @@ void main() async {
       ].contains(defaultTargetPlatform)) {}
 
   if (isDesktop) {
+    await WindowManager.instance.ensureInitialized();
     await flutter_acrylic.Window.initialize();
     if (defaultTargetPlatform == TargetPlatform.windows) {
-      await flutter_acrylic.Window.hideWindowControls();
+      await flutter_acrylic.Window.setEffect(effect: WindowEffect.transparent);
     }
-    await WindowManager.instance.ensureInitialized();
-    windowManager.waitUntilReadyToShow().then((_) async {
-      await windowManager.setTitleBarStyle(
-        TitleBarStyle.normal,
-        windowButtonVisibility: false,
-      );
-      await windowManager.setMinimumSize(const Size(500, 600));
-      await windowManager.show();
-      await windowManager.setPreventClose(true);
-      await windowManager.setSkipTaskbar(false);
-    });
+    await windowManager.setSize(Size(300, 300));
+    await windowManager.setAlignment(Alignment.center);
+
+    await windowManager.focus();
+    await windowManager.setTitleBarStyle(TitleBarStyle.hidden,
+        windowButtonVisibility: true);
+    await windowManager.setMinimizable(false);
+
+    await windowManager.setTitle("Sacred Song of Solos");
   }
 
   runApp(const MyApp());
@@ -55,24 +57,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-        home: FluentApp(
-            home: ScaffoldPage(),
-            title: appTitle,
-            themeMode: ThemeMode.dark,
-            debugShowCheckedModeBanner: false,
-            color: Colors.red,
-            darkTheme: FluentThemeData(
-              brightness: Brightness.dark,
-              visualDensity: VisualDensity.standard,
-              focusTheme: FocusThemeData(
-                glowFactor: is10footScreen(context) ? 2.0 : 0.0,
-              ),
-            ),
-            theme: FluentThemeData(
-              visualDensity: VisualDensity.standard,
-              focusTheme: FocusThemeData(
-                glowFactor: is10footScreen(context) ? 2.0 : 0.0,
-              ),
-            )));
+      home: Splash(),
+      theme: ThemeData(
+        primarySwatch: Colors.red,
+        fontFamily: "SFUIDisplay",
+      ),
+    );
   }
 }
