@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Hark, the glad sound-- the Saviour<br/>
+    The Saviour promised long;<br/>
+    Let every heart exult with joy comes!,<br/>
+    And every voice be song !<br/>
+    <br/>
+    2 He comes ! the prisoners to release,<br/>
+    In Satan's bondage held ;<br/>
+    The gates of brass before Him burst,<br/>
+    The iron fetters yield.<br/>
+    <br/>
+    3 He comes ! the broken hearts to bind,<br/>
+    The bleeding souls to cure ;<br/>
+    And with the treasures of His grace<br/>
+    To enrich the humble poor.<br/>
+    <br/>
+    4 Our glad hosannas,Prince of Peace !<br/>
+    Thy welcome shall proclaim;<br/>
+    And heaven's exalted arches ring<br/>
+    With Thy most honoured name.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(25)){
+	if (localStorage.getItem(25).toString() == '25'){
+		localStorage.setItem(25, '0');
+	}else{
+		localStorage.setItem(25, '25');
+	}
+}else{
+	localStorage.setItem(25, '25');
+}
+}
+
+if (localStorage.getItem(25).toString() == '25'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<div class="w3-container m1">
+  <p>1 Lo ! a fountain full and free,<br/>
+            Flowing, ever flowing !<br/>
+            Fainting heart, it is for thee—<br/>
+            Flowing, ever flowing !<br/>
+            Ever sparkling, never still,<br/>
+            Taste its sweetness, all who will.
+
+    <div class="chorus"> 
+            Flowing ever ! flowing, ever flowing !<br/>
+            Flowing ever ! flowing now for thee !</div>
+    
+            2 List the murmur that it speaks,<br/>
+            Flowing, ever flowing !<br/>
+            On the soul in song it breaks,<br/>
+            Flowing, ever flowing !<br/>
+            Singing weary souls to ease—<br/>
+            Music of all melodies.<br/>
+            <br/>
+            3 Blessed fount ! the purest known,<br/>
+            Flowing, ever flowing !<br/>
+            Stream of life from out God's throne,<br/>
+            Flowing, ever flowing !<br/>
+            Sacred blood for sinners spilt—<br/>
+            This can cleanse away thy guilt.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(137)){
+	if (localStorage.getItem(137).toString() == '137'){
+		localStorage.setItem(137, '0');
+	}else{
+		localStorage.setItem(137, '137');
+	}
+}else{
+	localStorage.setItem(137, '137');
+}
+}
+
+if (localStorage.getItem(137).toString() == '137'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

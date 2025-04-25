@@ -20,7 +20,7 @@ class SearchTextField extends StatelessWidget {
         ),
         hintText: "Search Hymn or Enter Number",
         hintStyle: TextStyle(
-            fontWeight: FontWeight.bold,
+            fontWeight: FontWeight.w500,
             color: const Color.fromARGB(92, 255, 255, 255)),
         enabledBorder: OutlineInputBorder(
             borderSide: BorderSide(width: 2, color: Colors.white),

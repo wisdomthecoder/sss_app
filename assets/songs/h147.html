@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<div class="w3-container m1">
+  <p>1 The Lord of glory ! who is He ?<br/>
+            Who is the King of glory ?<br/>
+            Only the Son of God can be<br/>
+            The Christ, the King of glory :<br/>
+            Consider all His wounds, and see<br/>
+            How Jesus' death upon the tree<br/>
+            Proclaims Him King of glory.
+
+            2 Above all heavens, at God's right hand,<br/>
+            Now sits the King of glory;<br/>
+            The angels by His favour stand<br/>
+            Before the throne of glory:<br/>
+            Swiftly they fly at His command,<br/>
+            To guard His own of every land.<br/>
+            To keep the heirs of glory.<br/>
+            <br/>
+            3 Death and the grave confess the Lamb<br/>
+            To be the King of glory; <br/>
+            The powers of darkness dread His name,<br/>
+            All creatures show His glory:<br/>
+            He said, Ere Abraham was I AM—<br/>
+            Jesus is evermore the same,<br/>
+            Th' Almighty King of glory.<br/>
+            <br/>
+            4 Thrice happy who in Him believe,<br/>
+            They soon will share His glory;<br/>
+            Born of His Spirit, they receive<br/>
+            His secret pledge of glory : <br/>
+            Taught by His cross, for sin they grieve;<br/>
+            He calls them brethren, and they cleave<br/>
+            To Him, their hope of glory, <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(147)){
+	if (localStorage.getItem(147).toString() == '147'){
+		localStorage.setItem(147, '0');
+	}else{
+		localStorage.setItem(147, '147');
+	}
+}else{
+	localStorage.setItem(147, '147');
+}
+}
+
+if (localStorage.getItem(147).toString() == '147'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

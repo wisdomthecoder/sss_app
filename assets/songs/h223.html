@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Holy, holy, holy is the Lord ! <br/>
+            Sing, O ye people, gladly adore Him ;  <br/>
+            Let the mountains tremble at His word,<br/>
+            Let the hills be joyful before Him ; <br/>
+            Mighty in wisdom, boundless in mercy, <br/>
+            Great is Jehovah, King over all !
+            
+            <div class="chorus">
+            Holy, holy, holy is the Lord, <br/>
+            Let the hills be joyful before Him ! 
+          </div>
+          
+            2 Praise Him, praise Him, shout aloud for joy !<br/>
+            Watchman of Zion, herald the story ; <br/>
+            Sin and death His kingdom shall destroy,  <br/>
+            All the earth shall sing of His glory ;<br/>
+            Praise Him, ye angels, ye who behold Him  <br/>
+            Robed in His splendour, matchless, divine !<br/>
+            <br/>
+            3 King eternal, blessed be His name ! <br/>
+            So may His children gladly adore Him; <br/>
+            When in heaven we join the happy strain, <br/>
+            When we cast our bright crowns before Him ;<br/>
+            There in His likeness joyful awaking, <br/>
+            There we shall see Him, there we shall sing ! <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(223)){
+	if (localStorage.getItem(223).toString() == '223'){
+		localStorage.setItem(223, '0');
+	}else{
+		localStorage.setItem(223, '223');
+	}
+}else{
+	localStorage.setItem(223, '223');
+}
+}
+
+if (localStorage.getItem(223).toString() == '223'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

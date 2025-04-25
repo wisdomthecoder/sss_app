@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Come ye yourselves apart and rest awhile,<br/>
+            Weary, I know it, of the press and throng ; <br/>
+            Wipe from your brow the sweat and dust of toil,<br/>
+            And in My quiet strength again be strong. <br/>
+            <br/>
+            2 Come ye aside from all the world holds dear,<br/>
+            For converse which the world has never known ; <br/>
+            Alone with Me and with My Father here,<br/>
+            With Me and with My Father not alone. <br/>
+            <br/>
+            3 Come, tell Me all that ye have said and done,  <br/>
+            Your victories and failures, hopes and fears ;<br/>
+            I know how hardly souls are wooed and won ;<br/>
+            My choicest wreaths are always wet with tears. <br/>
+            <br/>
+            4 Come ye and rest : the journey is too great,<br/>
+            And ye will faint beside the way, and sink : <br/>
+            The bread of life is here for you to eat,  <br/>
+            And here for you the wine of love to drink.<br/>
+            <br/>
+            5 Then, fresh from converse with your Lord, return  <br/>
+            And work till daylight softens into even :<br/>
+            The brief hours are not lost in which ye learn <br/>
+            More of your Master and His rest in heaven.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(279)){
+	if (localStorage.getItem(279).toString() == '279'){
+		localStorage.setItem(279, '0');
+	}else{
+		localStorage.setItem(279, '279');
+	}
+}else{
+	localStorage.setItem(279, '279');
+}
+}
+
+if (localStorage.getItem(279).toString() == '279'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

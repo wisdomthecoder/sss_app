@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container">
+  <p>When I survey the wondrous cross<br/>
+            On which the Prince of Glory died,<br/>
+            My richest gain I count but loss,<br/>
+            And pour contempt on all my pride.<br/>
+            <br/>
+            2 Forbid it, Lord, that I should boast,<br/>
+            Save in the death of Christ my God:<br/>
+            All the vain things that charm me most,<br/>
+            I sacrifice them to His blood, <br/>
+            <br/>
+            3 See! from His head, His hands, His feet,<br/>
+            Sorrow and love flow mingled down !<br/>
+            Did e'er such love and sorrow meet,<br/>
+            Or thorns compose so rich a crown ?<br/>
+            <br/>
+            4 Were the whole realm of nature mine,<br/>
+            That were an offering far too small:<br/>
+            Love so amazing, so divine,<br/>
+            Demands my soul, my life, my all.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(115)){
+	if (localStorage.getItem(115).toString() == '115'){
+		localStorage.setItem(115, '0');
+	}else{
+		localStorage.setItem(115, '115');
+	}
+}else{
+	localStorage.setItem(115, '115');
+}
+}
+
+if (localStorage.getItem(115).toString() == '115'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

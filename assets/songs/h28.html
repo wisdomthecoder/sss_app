@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>Rolling downward through the midnight,<br/>
+    Comes a glorious burst of heavenly song;<br/>
+    Tis a chorus full of sweetness <br/>
+    And the singers are an angel throng
+    
+  <div class="chorus">
+    Glory ! glory ...in the highest <br/>
+    On the earth good will and peace to men<br/>
+    Down the ages . . .send the echo ;<br/>
+    Let the glad earth shout again!
+  </div>
+
+    2 Wondering shepherds see the glory,<br/>
+    Hear the word the shining ones declare;<br/>
+    At the manger fall in worship, <br/>
+    While the music fills the quivering air.<br/>
+    <br/>
+    3 Christ the Saviour,God's Anointed,<br/>
+    Comes to earth our fearful debt to pay <br/>
+    Man of Sorrows,and rejected,<br/>
+    Lamb of God, that takes our sin away.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(28)){
+	if (localStorage.getItem(28).toString() == '28'){
+		localStorage.setItem(28, '0');
+	}else{
+		localStorage.setItem(28, '28');
+	}
+}else{
+	localStorage.setItem(28, '28');
+}
+}
+
+if (localStorage.getItem(28).toString() == '28'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

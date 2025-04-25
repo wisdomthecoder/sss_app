@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Oh, wondrous Name, by prophets heard, <br/>
+    Long years before His birth ;<br/>
+    They saw His coming from afar, <br/>
+    The Prince of Peace on earth.
+
+    <div class="chorus"> 
+    The Wonderful ! The Counsellor ! <br/>
+    The Great and Mighty Lord ! <br/>
+    The Everlasting Prince of Peace ! <br/>
+    The King, the Son of God ! </div>
+    
+    2 Oh, glorious Name the angels praise, <br/>
+    And ransomed saints adore — <br/>
+    The Name above all other names, <br/>
+    Our refuge evermore. <br/>
+    <br/>
+    3 Oh, precious Name, exalted high, <br/>
+    To whom all power is given ; <br/>
+    Through Him we triumph over sin, <br/>
+    By Him we enter heaven. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(96)){
+	if (localStorage.getItem(96).toString() == '96'){
+		localStorage.setItem(96, '0');
+	}else{
+		localStorage.setItem(96, '96');
+	}
+}else{
+	localStorage.setItem(96, '96');
+}
+}
+
+if (localStorage.getItem(96).toString() == '96'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

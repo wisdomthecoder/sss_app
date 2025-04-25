@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Christ hath redeemed us: sing<br/>
+            the glad word!<br/>
+            Mercy's sweet message be telling,<br/>
+            How, through the ransom made by<br/>
+            His blood,<br/>
+            Christ now within us is dwelling.
+
+    <div class="chorus"> 
+            Christ hath redeemed us: Praise to His<br/>
+            Praise Him, ye angels in glory! [name!<br/>
+            Christ hath redeemed us, bearing our shame;<br/>
+            Tell out the wonderful story!</div>
+    
+            2Christ hath redeemed us, making us free,<br/>
+            Free from the sins that enslaved us;<br/>
+            Never in bondage more Can we be,<br/>
+            Trusting in Him who hath saved us.<br/>
+            <br/>
+            3Christ hath redeemed us: we are His own, <br/>
+            Purchased by blood—He will hold us;<br/>
+            Nor will He ever leave us alone,<br/>
+            Safely His arms shall enfold us,<br/>
+            <br/>
+            4Christ hath redeemed us: soon with the throng<br/>
+            Gathered in glory we'll meet Him;<br/>
+            Oh, with what rapture join in the song,<br/>
+            When face to face we shall greet Him!</p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(118)){
+	if (localStorage.getItem(118).toString() == '118'){
+		localStorage.setItem(118, '0');
+	}else{
+		localStorage.setItem(118, '118');
+	}
+}else{
+	localStorage.setItem(118, '118');
+}
+}
+
+if (localStorage.getItem(118).toString() == '118'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

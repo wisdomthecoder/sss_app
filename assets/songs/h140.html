@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 All ye that pass by,<br/>
+            To Jesus draw nigh;<br/>
+            To you is it nothing<br/>
+            That Jesus should die ?<br/>
+            Your ransom and peace,<br/>
+            Your surety He is,<br/>
+            Come, see if there ever<br/>
+            Was sorrow like His.<br/>
+            <br/>
+            2 For what you have done<br/>
+            His blood must atone:<br/>
+            The Father hath punished<br/>
+            For you His dear Son:<br/>
+            The Lord, in the day<br/>
+            Of His anger did lay<br/>
+            Your sins on the Lamb,<br/>
+            And He bore them away.<br/>
+            <br/>
+            3 He died to atone<br/>
+            For sins not His own;<br/>
+            Your debt He hath paid<br/>
+            And your work He hath done:<br/>
+            Ye all may receive<br/>
+            The peace He did leave,<br/>
+            Who made intercession,<br/>
+            My Father, forgive !<br/>
+            4 For you and for me<br/>
+            He prayed on the tree;<br/>
+            The prayer is accepted,<br/>
+            The sinner is free;<br/>
+            The sinner am I,<br/>
+            Who on Jesus rely,<br/>
+            And come for the pardon<br/>
+            God cannot deny.<br/>
+            <br/>
+            5 His death is my plea;<br/>
+            My Advocate see,<br/>
+            And hear the blood speak<br/>
+            That hath answered for me:<br/>
+            He purchased the grace<br/>
+            Which now I embrace;<br/>
+            O Father, Thou know'st<br/>
+            He hath died in my place !<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(140)){
+	if (localStorage.getItem(140).toString() == '140'){
+		localStorage.setItem(140, '0');
+	}else{
+		localStorage.setItem(140, '140');
+	}
+}else{
+	localStorage.setItem(140, '140');
+}
+}
+
+if (localStorage.getItem(140).toString() == '140'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

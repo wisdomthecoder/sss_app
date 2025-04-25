@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+
+<div class="w3-container m1">
+  <p>1 At evening time may there be light, <br/>
+            While life's brief day is closing ; <br/>
+            Then shall I fear no gathering night, <br/>
+            In Jesus' love reposing. <br/>
+            <br/>
+            2 At evening time may there be light, <br/>
+            The light of life eternal ; <br/>
+            The radiance of those mansions <br/>
+            In climes for ever vernal, [bright, <br/>
+            <br/>
+            3 At evening time there shall be light, <br/>
+            Earth's day of storm is dying ; <br/>
+            Sorrow and sadness take their flight, <br/>
+            There shall be no more sighing. <br/>
+            <br/>
+            4 At evening time there shall be light, <br/>
+            The twilight skies adorning ; <br/>
+            But oh, how fair the radiance bright <br/>
+            Of that swift-speeding morning. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(290)){
+	if (localStorage.getItem(290).toString() == '290'){
+		localStorage.setItem(290, '0');
+	}else{
+		localStorage.setItem(290, '290');
+	}
+}else{
+	localStorage.setItem(290, '290');
+}
+}
+
+if (localStorage.getItem(290).toString() == '290'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

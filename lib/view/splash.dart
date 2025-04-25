@@ -12,10 +12,10 @@ class Splash extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    windowManager.setSize(Size(300, 300));
+    // windowManager.setSize(Size(300, 300));
 
     Timer(Duration(seconds: 3), () {
-      Get.to(DesktopHome());
+      Get.offAll(DesktopHome());
     });
     return Scaffold(
       body: Center(

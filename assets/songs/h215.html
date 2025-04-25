@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<div class="w3-container m1">
+  <p>1 Praise ye the Lord ! joyfully shout hosanna ! <br/>
+            Praise the Lord with glad acclaim;<br/>
+            Lift up your hearts unto His throne with gladness----<br/>
+            Magnify His holy name. [bright, <br/>
+            Marching along under His banner <br/>
+            Trusting in His mercy as we go. <br/>
+            His light divine tenderly o'er us will shine ;  <br/>
+            We shall be guided by His hand now and for ever.
+            
+            <div class="chorus">
+            Steadily marching on, with our banner waving <br/>
+            o'er us ;<br/>
+            Steadily marching on, while we sing the joyful chorus ; <br/>
+            Steadily marching on, pillar and cloud going <br/>
+            before us, <br/>
+            To the realms of glory, to our home on high. 
+          </div>
+          
+            2 Praise ye the Lord ! He is the King eternal ; <br/>
+            Glory be to God on high ! <br/>
+            Praise ye the Lord, tell of His loving- Kindness-----<br/>
+            Join the chorus of the sky. <br/>
+            Still marching on, cheerily marching on,<br/>
+            In the ranks of Jesus we will go : <br/>
+            Home to our rest, joyfully home where the blest <br/>
+            Gather and praise the Saviour's <br/>
+            name, praise Him for ever. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(215)){
+	if (localStorage.getItem(215).toString() == '215'){
+		localStorage.setItem(215, '0');
+	}else{
+		localStorage.setItem(215, '215');
+	}
+}else{
+	localStorage.setItem(215, '215');
+}
+}
+
+if (localStorage.getItem(215).toString() == '215'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

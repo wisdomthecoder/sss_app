@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Arise, my soul, arise !<br/>
+            Shake off thy guilty fears;<br/>
+            The bleeding Sacrifice<br/>
+            In my behalf appears.<br/>
+            Before the throne my Surety stands;<br/>
+            My name is written on His hands.<br/>
+            <br/>
+            2 He ever lives above,<br/>
+            For me to intercede,<br/>
+            His all-redeeming love,<br/>
+            His precious blood to plead;<br/>
+            His blood atoned for all our race,<br/>
+            And sprinkles now the throne of grace.<br/>
+            <br/>
+            3 Five bleeding wounds He bears,<br/>
+            Received on Calvary;<br/>
+            They pour effectual prayers,<br/>
+            They strongly plead for me:<br/>
+            Forgive him, oh, forgive ! they cry,<br/>
+            Nor let that ransomed sinner die.<br/>
+            <br/>
+            4 My God is reconciled;<br/>
+            His pardoning voice I hear:<br/>
+            He owns me for His child;<br/>
+            I can no longer fear:<br/>
+            With confidence I now draw nigh,<br/>
+            And Father, Abba Father !cry.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(154)){
+	if (localStorage.getItem(154).toString() == '154'){
+		localStorage.setItem(154, '0');
+	}else{
+		localStorage.setItem(154, '154');
+	}
+}else{
+	localStorage.setItem(154, '154');
+}
+}
+
+if (localStorage.getItem(154).toString() == '154'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

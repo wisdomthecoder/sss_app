@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 COME, Holy Spirit, like a dove descending,  <br/>
+            Rest Thou upon us while we meet to pray ;<br/>
+            Show us the Saviour, His great love revealing ; <br/>
+            Lead us to Him, the Life, the Truth, the Way. <br/>
+            <br/>
+            2 Come, Holy Spirit, every cloud dispelling ; <br/>
+            Fill us with gladness, through the Master's name : <br/>
+            String to our memory words that He hath spoken, <br/>
+            Then shall our tongues His wondrous grace proclaim. <br/>
+            <br/>
+            3 Come, Holy Spirit, sent from God the Father----- <br/>
+            Thou Friend and Teacher, Comforter and Guide----- <br/>
+            Oar thoughts directing, keep us close to Jesus,  <br/>
+            And in our hearts for evermore abide.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(195)){
+	if (localStorage.getItem(195).toString() == '195'){
+		localStorage.setItem(195, '0');
+	}else{
+		localStorage.setItem(195, '195');
+	}
+}else{
+	localStorage.setItem(195, '195');
+}
+}
+
+if (localStorage.getItem(195).toString() == '195'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

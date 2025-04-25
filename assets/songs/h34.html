@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 To us a Child of hope is born,<br/>
+    To us a Son is given;<br/>
+    Him shall the tribes of earth obey,<br/>
+    Him all the hosts of heaven.<br/>
+    <br/>
+    2 His name shall be the Prince of Peace,<br/>
+    For evermore adored,<br/>
+    The Wonderful, the Counsellor,<br/>
+    The great and mighty Lord !<br/>
+    <br/>
+    3 His power, increasing, still shall spread;<br/>
+    His reign no end shall know:<br/>
+    Justice shall guard His throne above,<br/>
+    And peace abound below.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(34)){
+	if (localStorage.getItem(34).toString() == '34'){
+		localStorage.setItem(34, '0');
+	}else{
+		localStorage.setItem(34, '34');
+	}
+}else{
+	localStorage.setItem(34, '34');
+}
+}
+
+if (localStorage.getItem(34).toString() == '34'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Like some sweet bird that upward <br />
+    flies, <br />
+    My soul to heavenly heights would rise<br />
+    And while I mount to worlds above, <br />
+    Would sing of Christ's redeeming love.
+    
+  <div class="chorus">
+    Redeeming love, . . . redeeming love ! . . . <br />
+    The grandest theme, all themes above ; <br />
+    My soul with joy . . . her wings would prove, <br />
+    And sing of Christ's redeeming love. </div>
+
+    2 Like some sweet flower of spring that wakes, <br />
+    When sun and shower its slumber breaks,<br />
+    My soul would rise from doubt and gloom, <br />
+    And in His love eternal bloom. <br />
+    <br />
+    3 Redeeming love ! oh, can it be <br />
+    That Jesus shed His blood for me ? <br />
+    His glorious name I will adore, <br />
+    And praise and bless Him evermore. <br /></p>
+  </div>
+  <script>
+    function mm1() {
+      if (localStorage.getItem(56)) {
+        if (localStorage.getItem(56).toString() == '56') {
+          localStorage.setItem(56, '0');
+        } else {
+          localStorage.setItem(56, '56');
+        }
+      } else {
+        localStorage.setItem(56, '56');
+      }
+    }
+
+    if (localStorage.getItem(56).toString() == '56') {
+      document.getElementById("btns").style.color = "blue";
+      document.getElementById("image").src = "stars1.png";
+    } else {
+      document.getElementById("btns").style.color = "white";
+      document.getElementById("image").src = "stars.png";
+    }
+    function bbbb() {
+      if (document.getElementById("btns").style.color == "blue") { document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png"; }
+      else { document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png"; }
+    }
+  </script>
+  <script src="hscript.js"></script>
+  </body>

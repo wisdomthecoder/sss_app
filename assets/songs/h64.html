@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<div class="w3-container m1">
+  <p>Tenderly the shepherd,<br />
+    O'er the mountains cold,<br />
+    Goes to bring his lost one<br />
+    Back to the fold.
+
+  <div class="chorus">
+    Seeking to save, seeking to save ;<br />
+    Lost one, 'tis Jesus seeking to save.<br />
+    Seeking to save, seeking to save ;<br />
+    Lost one, 'tis Jesus seeking to save.</div>
+
+  2 Patiently the owner<br />
+  Seeks with earnest care,<br />
+  In the dust and darkness,<br />
+  Her treasure rare.<br />
+  <br />
+  3 Lovingly the father<br />
+  Sends the news around :<br />
+  He once dead now liveth <br />
+  Once lost is found.<br /></p>
+</div>
+<script>
+  function mm1() {
+    if (localStorage.getItem(64)) {
+      if (localStorage.getItem(64).toString() == '64') {
+        localStorage.setItem(64, '0');
+      } else {
+        localStorage.setItem(64, '64');
+      }
+    } else {
+      localStorage.setItem(64, '64');
+    }
+  }
+
+  if (localStorage.getItem(64).toString() == '64') {
+    document.getElementById("btns").style.color = "blue";
+    document.getElementById("image").src = "stars1.png";
+  } else {
+    document.getElementById("btns").style.color = "white";
+    document.getElementById("image").src = "stars.png";
+  }
+  function bbbb() {
+    if (document.getElementById("btns").style.color == "blue") { document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png"; }
+    else { document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png"; }
+  }
+</script>
+<script src="hscript.js"></script>
+</body>

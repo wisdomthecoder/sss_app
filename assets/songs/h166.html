@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 When Jesus shall gather the nations<br/>
+            Before Him at last to appear,<br/>
+            Oh, how shall we stand in the Judgment, <br/>
+            When summoned our sentence to hear ?
+
+    <div class="chorus"> 
+            He will gather the wheat in His garner,<br/>
+            But the chaff will He scatter away;<br/>
+            Then how shall we stand in the Judgment—<br/>
+            Oh, how shall we stand in that day ?</div>
+    
+            2 Shall we hear from the lips of the Saviour<br/>
+            The words, “Faithful servant, well done !”<br/>
+            Or, trembling with fear and with anguish,<br/>
+            Be banished away from is throne ?<br/>
+            <br/>
+            3 Then let us be watching and waiting—<br/>
+            Our lamps burning steady and bright—<br/>
+            That when we are called by the Bridegroom,<br/>
+            We'll answer the call with delight.<br/>
+            <br/>
+            4 Thus living with hearts fixed on Jesus,<br/>
+            In patience we wait for the time<br/>
+            When the days of our pilgrimage<br/>
+            ended,<br/>
+            We'll rest in His presence divine.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(166)){
+	if (localStorage.getItem(166).toString() == '166'){
+		localStorage.setItem(166, '0');
+	}else{
+		localStorage.setItem(166, '166');
+	}
+}else{
+	localStorage.setItem(166, '166');
+}
+}
+
+if (localStorage.getItem(166).toString() == '166'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

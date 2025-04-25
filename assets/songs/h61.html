@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>Master, the tempest is raging!<br/>
+    The billows are tossing high I<br/>
+    The sky is o'er-shadowed with blackness<br/>
+    No shelter or help is nigh:,<br/>
+    Carest Thou not that we perish ? <br/>
+    How canst Thou lie asleep,<br/>
+    When each moment so madly is threatening<br/>
+    A grave in the angry deep ?<br/>
+    The winds and the waves shall obey My will!<br/>
+    Peace ! ...be stilt ! . . .<br/>
+    Whether the wrath of the storm-tost sea.
+    <div class="chorus">
+    Or demons, or men, or whatever it be,<br/>
+    No waters can swallow the ship where lies<br/>
+    The Master of ocean, and earth, and skies :<br/>
+    They all shall sweetly obey My will ;<br/>
+    Peace ! be still! Peace ! be still !<br/>
+    They all shall sweetly obey My will ;<br/>
+    Peace I peace ! be still !</div>
+    
+    2 Master, with anguish of spirit<br/>
+    I bow in my grief to-day;<br/>
+    The depths of my sad heart arc troubled ;<br/>
+    Oh, waken and save, I pray !<br/>
+    Torrents of sin and of anguish<br/>
+    Sweep o'er my sinking soul ;<br/>
+    And I perish! I perish! dear Master :<br/>
+    Oh, hasten,and take control.<br/>
+    <br/>
+    3 Master, the terror is over,<br/>
+    The elements sweetly rest ;<br/>
+    Earth's sun in the calm lake is mirrored,<br/>
+    And heaven's within my breast ;<br/>
+    Linger, O blessed Redeemer,<br/>
+    Leave me alone no more :<br/>
+    And with joy I shall make the blest harbour,<br/>
+    And rest on the blissful shore.</p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(61)){
+	if (localStorage.getItem(61).toString() == '61'){
+		localStorage.setItem(61, '0');
+	}else{
+		localStorage.setItem(61, '61');
+	}
+}else{
+	localStorage.setItem(61, '61');
+}
+}
+
+if (localStorage.getItem(61).toString() == '61'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

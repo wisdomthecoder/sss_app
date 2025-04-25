@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+
+<div class="w3-container m1">
+  <p>1 Sweet is the work, my God, my King, <br/>
+            To praise Thy name, give thanks and sing, <br/>
+            To show Thy love by morning light, <br/>
+            And talk of all Thy truth at night. <br/>
+            <br/>
+            2 Sweet is the day of sacred rest, <br/>
+            No mortal cares can seize my breast ; <br/>
+            Oh may my heart in tune be found, <br/>
+            Like David's harp of solemn sound. <br/>
+            <br/>
+            3 My heart shall triumph in the Lord, <br/>
+            And bless His works, and bless His Word; <br/>
+            Thy works of grace, how bright they shine !<br/>
+            How deep Thy counsels, how divine ! <br/>
+            <br/>
+            4 Lord, I shall share a glorious part <br/>
+            When grace hath well refined my heart, <br/>
+            And fresh supplies of joy are shed, <br/>
+            Like holy oil, to cheer my head. <br/>
+            <br/>
+            5 Sin, my worst enemy before, <br/>
+            Shall vex my eyes and ears no more; <br/>
+            My inward foes shall all be slain, <br/>
+            Nor Satan break my peace again. <br/>
+            <br/>
+            6 Then shall I see, and hear, and know <br/>
+            All I desired or wished below, <br/>
+            And every power find sweet employ <br/>
+            In that eternal world of joy. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(275)){
+	if (localStorage.getItem(275).toString() == '275'){
+		localStorage.setItem(275, '0');
+	}else{
+		localStorage.setItem(275, '275');
+	}
+}else{
+	localStorage.setItem(275, '275');
+}
+}
+
+if (localStorage.getItem(275).toString() == '275'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

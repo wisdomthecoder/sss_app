@@ -10,7 +10,7 @@ class HymnTile extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
-        color: Colors.white,
+        color: Colors.white30,
       ),
       child: ListTile(
         minLeadingWidth: 20,

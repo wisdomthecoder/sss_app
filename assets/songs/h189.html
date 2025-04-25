@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Come, Holy Ghost, our hearts inspire ; <br/>
+            Let us Thine influence prove, <br/>
+            Source of the old prophetic fire, <br/>
+            Fountain of light and love.<br/>
+            <br/>
+            2 Come, Holy Ghost, for, moved by Thee, <br/>
+            The prophets wrote and spoke ; <br/>
+            Unlock the truth, Thyself the Key, <br/>
+            Unseal the sacred book. <br/>
+            <br/>
+            3 Expand Thy wings, celestial Dove, <br/>
+            Brood o'er our nature's night ; <br/>
+            On our disordered spirits move, <br/>
+            And let there now be light. <br/>
+            <br/>
+            4 God, through Himself, we then shall know, <br/>
+            If Thou within us shine ; <br/>
+            And sound, with all Thy saints below, <br/>
+            The depths of love divine. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(189)){
+	if (localStorage.getItem(189).toString() == '189'){
+		localStorage.setItem(189, '0');
+	}else{
+		localStorage.setItem(189, '189');
+	}
+}else{
+	localStorage.setItem(189, '189');
+}
+}
+
+if (localStorage.getItem(189).toString() == '189'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

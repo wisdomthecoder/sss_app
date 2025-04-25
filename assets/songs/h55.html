@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 She only touched the hem of His garment<br/>
+    As to His side she stole, <br/>
+    Amid the crowd that gathered around Him; <br/>
+    And straightway she was whole.
+    
+    <div class="chorus">
+    Oh, touch the hem of His garment ! <br/>
+    And thou, too, shalt be free ; <br/>
+    His saving power this very hour <br/>
+    Shall give new life to thee ! </div>
+
+    2 She came in fear and trembling <br/>
+    before Him, <br/>
+    She knew her Lord had come ; <br/>
+    She felt that from Him virtue had <br/>
+    healed her ; <br/>
+    The mighty deed was done. <br/>
+    <br/>
+    3 He turned with  Daughter, be of good comfort, <br/>
+    Thy faith hath made thee whole !  <br/>
+    And peace that passeth all under-standing <br/>
+    With gladness filled her soul. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(55)){
+	if (localStorage.getItem(55).toString() == '55'){
+		localStorage.setItem(55, '0');
+	}else{
+		localStorage.setItem(55, '55');
+	}
+}else{
+	localStorage.setItem(55, '55');
+}
+}
+
+if (localStorage.getItem(55).toString() == '55'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

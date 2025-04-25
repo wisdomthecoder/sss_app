@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>There is love, true love, and the<br/>
+    heart grows warm,<br/>
+    When the Lord to Bethany comes;<br/>
+    And the word of life has a wondrous charm,<br/>
+    When the Lord to Bethany comes.<br/>
+    There is joy, glad joy,and a feast is spread,<br/>
+    When the Lord to Bethany comes ;<br/>
+    For His heavenly voice brings to life<br/>
+    the dead, When the Lord to Bethany comes.
+
+    <div class="chorus"> 
+
+    'Twas a happy, happy day in the olden time,<br/>
+    When the Lord to Bethany came ;<br/>
+    Open wide the door, let Him enter now,<br/>
+    For Kis love is ever the same !<br/>
+    His love is ever the same ! . .His love is ever the same! . . . <br/>
+    Open wide the door, let Him enter now !<br/>
+    For His love is ever the same !</div>
+    
+    2 There is peace, sweet peace, and the life grows calm,<br/>
+    When the Lord to Bethany comes ;<br/>
+    And the trusting soul sings a sweet, soft psalm,<br/>
+    When the Lord to Bethany comes.<br/>
+    There is faith, strong faith, and our home seems near,<br/>
+    When the Lord to Bethany comes ;<br/>
+    And the crown more bright, and the cross more dear,<br/>
+    When the Lord to Bethany comes.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(80)){
+	if (localStorage.getItem(80).toString() == '80'){
+		localStorage.setItem(80, '0');
+	}else{
+		localStorage.setItem(80, '80');
+	}
+}else{
+	localStorage.setItem(80, '80');
+}
+}
+
+if (localStorage.getItem(80).toString() == '80'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

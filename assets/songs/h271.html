@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 How pleased and blest was I <br/>
+            To hear the people cry : <br/>
+            Come, let us seek our God to-day !<br/>
+            Yes, with a cheerful zeal <br/>
+            We haste to Zion's hill, <br/>
+            And there our vows and honours pay. <br/>
+            <br/>
+            2 Zion, thrice happy place, <br/>
+            Adorned with wondrous grace, <br/>
+            And walls of strength embrace thee <br/>
+            In thee our tribes appear, [round ; <br/>
+            To pray and praise and hear <br/>
+            The sacred Gospel's joyful sound. <br/>
+            <br/>
+            3 There David's greater Son <br/>
+            Has fixed His royal throne- <br/>
+            He sits for grace and judgment there <br/>
+            He bids the saint be glad, <br/>
+            He makes the sinner sad, <br/>
+            And humble souls rejoice with fear. <br/>
+            <br/>
+            4 May peace attend thy gate, <br/>
+            And joy within thee wait <br/>
+            To bless the soul of every guest : <br/>
+            The man that seeks thy peace, <br/>
+            And wishes thine increase, <br/>
+            A thousand blessings on him rest. <br/>
+            <br/>
+            5 My tongue repeats her vows, <br/>
+            Peace to this sacred house ! <br/>
+            For there my friends and kindred <br/>
+            And since my glorious God [dwell ; <br/>
+            Makes thee His blest abode, <br/>
+            My soul shall ever love thee well, <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(271)){
+	if (localStorage.getItem(271).toString() == '271'){
+		localStorage.setItem(271, '0');
+	}else{
+		localStorage.setItem(271, '271');
+	}
+}else{
+	localStorage.setItem(271, '271');
+}
+}
+
+if (localStorage.getItem(271).toString() == '271'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

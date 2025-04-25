@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 I will sing the love of Jesus--<br/>
+    Greater love was never known ;<br/>
+    Yielding up His life for sinners,<br/>
+    Oh, what love to me was shown !
+    <div class="chorus">
+    I will praise... my great Redeemer, . . .<br/>
+    As my days ... are on the wing ;<br/>
+    I will sing ...of Him who saves me, .<br/>
+    I will magnify the Lord my King.
+    </div>
+    
+    2 I will sing the words of Jesus--<br/>
+    Words of life from lips Divine ;<br/>
+    Full of comfort,joy,and courage,<br/>
+    Precious to this soul of mine.<br/>
+    <br/>
+    3 I will sing the grace of Jesus--<br/>
+    Grace my heart may now receive;<br/>
+    He by faith will seal my pardon,<br/>
+    If His promise I believe.<br/>
+    <br/>
+    4 I will sing the name of Jesus--<br/>
+    Name of all most dear to me ;<br/>
+    By the ransomed host in glory<br/>
+    Shall His name exalted be.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(36)){
+	if (localStorage.getItem(36).toString() == '36'){
+		localStorage.setItem(36, '0');
+	}else{
+		localStorage.setItem(36, '36');
+	}
+}else{
+	localStorage.setItem(36, '36');
+}
+}
+
+if (localStorage.getItem(36).toString() == '36'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+
+<div class="w3-container m1">
+  <p>1 There's a glorious Kingdom waiting<br/>
+            in the land beyond the sky,<br/>
+            Where the saints have been gathering year by year;<br/>
+            And the days are swiftly passing that<br/>
+            will bring the Kingdom nigh:<br/>
+            For the coming of the Kingdom<br/>
+            draweth near !
+
+    <div class="chorus">
+            Oh, the coming of the Kingdom draweth near ! . . .<br/>
+            Oh, the coming of the Kingdom draweth near ! . . .<br/>
+            Be thou ready, O my soul, for the trumpet soon may roll,<br/>
+            And the King in His glory shall appear</div>
+    
+            2 ‘Tis the hope of yonder Kingdom, and<br/>
+            the glory there prepared,<br/>
+            And the looking for the Saviour to appear,<br/>
+            That delivers us from bondage to the<br/>
+            world that once ensnared:<br/>
+            For the coming of the Kingdom<br/>
+            draweth near !<br/>
+            <br/>
+            3 With the coming of the Kingdom we<br/>
+            shall see our blessed Lord,<br/>
+            For the King ere the Kingdom<br/>
+            must appear,<br/>
+            Hallelujah to His name, who <br/>
+            redeemed us by His blood !<br/>
+            Oh, the coming of the Kingdom<br/>
+            draweth near !<br/>
+            <br/>
+            4 Oh, the world is growing weary, it<br/>
+            has waited now so long,<br/>
+            And the hearts of men are failing<br/>
+            them for fear;<br/>
+            Let us tell them of the Kingdom, let<br/>
+            us cheer them with the song,<br/>
+            That the coming of the Kingdom<br/>
+            draweth near !<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(168)){
+	if (localStorage.getItem(168).toString() == '168'){
+		localStorage.setItem(168, '0');
+	}else{
+		localStorage.setItem(168, '168');
+	}
+}else{
+	localStorage.setItem(168, '168');
+}
+}
+
+if (localStorage.getItem(168).toString() == '168'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

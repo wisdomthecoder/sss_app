@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Jesus, Saviour, on Thy breast <br/>
+            I would lay me down to rest ; <br/>
+            While mine eyelids gently close, <br/>
+            Thou wilt grant me calm repose.  
+
+    <div class="chorus"> 
+            May Thine angels vigil keep <br/>
+            While I lay me down to sleep. </div>
+    
+            2 Lord, this wayward heart forgive, <br/>
+            Teach me more like Thee to live ; <br/>
+            Every evil thought subdue ; <br/>
+            May Thy grace my strength renew. <br/>
+            <br/>
+            3 When the day of life is past, <br/>
+            And the twilight comes at last, <br/>
+            When I cross the narrow sea, <br/>
+            I shall still abide in Thee. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(299)){
+	if (localStorage.getItem(299).toString() == '299'){
+		localStorage.setItem(299, '0');
+	}else{
+		localStorage.setItem(299, '299');
+	}
+}else{
+	localStorage.setItem(299, '299');
+}
+}
+
+if (localStorage.getItem(299).toString() == '299'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

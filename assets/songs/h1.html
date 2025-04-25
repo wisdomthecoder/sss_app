@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+<!-- 
+<body onbeforeunload="interz();">
+<div class="w3-bar w3-red w3-top pb">
+<button class="w3-bar-item w3-btn" data-rel="back" onclick="javascript:stopPlayerz(); goBack();"><img src="pre.png"></button>
+  <div class="w3-bar-item  w3-display-middle"><h5>1</h5></div> -->
+  <!-- <button class="w3-bar-item w3-btn w3-display-right" onclick="javascript:shareitz();"><img src="share.png"></button>
+  <button id= "btns" class="w3-bar-item w3-btn" onclick="mm1(); bbbb();"><img id= "image" src="stars.png"></button>
+</div>
+    <div class="fixing">
+	        <div class="players">
+			 <button class="w3-button w3-teal w3-small" onclick="javascript:playz('a0001')">Play</button>
+			<button class="w3-button w3-red w3-small" onclick="javascript:stopPlayerz()">stop</button>&nbsp;&nbsp;
+			<div class="w3-show-inline-block">
+			<button class="w3-btn w3-black w3-round-large end"><img src="equalizers.gif"></button>
+			<button class="w3-btn w3-black w3-round-large start"><img src="equalizer.gif"></button>
+        </div>
+		</div>
+    </div> -->
+<div class="w3-container m1">
+  
+
+  <p>1 Praise, my soul, the King of heaven ;<br/>
+    To His feet thy tribute bring ;<br/>
+    Ransomed, healed, restored, forgiven,<br/>
+    Who like thee His praise shall sing ?<br/>
+    Praise Him! praise Him!<br/>
+    Praise the everlasting King!<br/>
+    <br/>
+    2 Praise Him for His grace and favour<br/>
+    To our fathers in distress ;<br/>
+    Praise Him, still the same as ever,<br/>
+    Slow to chide, and swift to bless :<br/>
+    Praise Him! praise Him !<br/>
+    Glorious in His faithfulness !<br/>
+    <br/>
+    3 Father- like He tends and spares us,<br/>
+    Well our feeble frame He knows ;<br/>
+    In His hands He gently bears us,<br/>
+    Rescues us from all our foes :<br/>
+    Praise Him ! praise Him !<br/>
+    Widely as His mercy flows.<br/>
+    <br/>
+    4 Angels, help us to adore Him,<br/>
+    Ye behold Him face to face !<br/>
+    Sun and moon, bow down before<br/>
+    Him !Dwellers all in time and space,<br/>
+    Praise Him ! praise Him !<br/>
+    Praise with us the God of grace !<br/></p>	
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(1)){
+	if (localStorage.getItem(1).toString() == '1'){
+		localStorage.setItem(1, '0');
+	}else{
+		localStorage.setItem(1, '1');
+	}
+}else{
+	localStorage.setItem(1, '1');
+}
+}
+
+if (localStorage.getItem(1).toString() == '1'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+  
+<script src="hscript.js"></script></body>

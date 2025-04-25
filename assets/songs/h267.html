@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Thy Word is a lamp to my feet, O Lord, <br/>
+            Thy Word is a light to my way ; <br/>
+            It shines in my soul like a star by night, <br/>
+            And comforts and cheers me by day. 
+            
+            <div class="chorus">
+            O wonderful, wonderful Word, <br/>
+            My treasure, my hope, and my stay ; <br/>
+            Each promise recorded delights my soul, <br/>
+            And brightens each step of my way. 
+          </div>
+          
+            2 Thy Word is a lamp to my feet, O Lord, <br/>
+            And, trusting in Thee as my all, <br/>
+            Whatever of evil may cross my path, <br/>
+            I never, no, never can fall. <br/>
+            <br/>
+            3 Thy Word is a lamp to my feet, O Lord ; <br/>
+            And oh, when Thy glory I see, <br/>
+            For all the rich blessings its truth has brought, <br/>
+            The praise will I give unto Thee. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(267)){
+	if (localStorage.getItem(267).toString() == '267'){
+		localStorage.setItem(267, '0');
+	}else{
+		localStorage.setItem(267, '267');
+	}
+}else{
+	localStorage.setItem(267, '267');
+}
+}
+
+if (localStorage.getItem(267).toString() == '267'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

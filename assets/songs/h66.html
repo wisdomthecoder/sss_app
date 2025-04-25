@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>Who is He in yonder stall,<br/>
+    At whose feet the shepherds fall?
+    <div class="chorus">
+    'Tis the Lord ! O wondrous story !<br/>
+    'Tis the Lord, the King of Glory !<br/>
+    At His feet we humbly fall-<br/>
+    Crown Him 1 crown Him Lord of all!
+    </div>
+    2 Who is He in deep distress,<br/>
+    Fasting in the wilderness ?<br/>
+    <br/>
+    3 Who is He the people bless<br/>
+    For His words of gentleness ?<br/>
+    <br/>
+    4 Who is He to whom they bring<br/>
+    All the sick and sorrowing?<br/>
+    <br/>
+    5 Who is He who stands and weeps<br/>
+    At the grave where Lazarus sleeps ?<br/>
+    <br/>
+    6 Who is He the gathering throng<br/>
+    Greet with loud triumphant song ?<br/>
+    <br/>
+    7 Lo, at midnight, who is He<br/>
+    Prays in dark Gethsemane ?<br/>
+    <br/>
+    8 Who is He on yonder tree<br/>
+    Dies in grief and agony ?<br/>
+    <br/>
+    9 Who is He who from the grave<br/>
+    Comes to succour, help,and save ?<br/>
+    <br/>
+    10 Who is He who from His throne<br/>
+    Rules through all the worlds alone ?<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(66)){
+	if (localStorage.getItem(66).toString() == '66'){
+		localStorage.setItem(66, '0');
+	}else{
+		localStorage.setItem(66, '66');
+	}
+}else{
+	localStorage.setItem(66, '66');
+}
+}
+
+if (localStorage.getItem(66).toString() == '66'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

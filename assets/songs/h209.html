@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Praise the King of Glory, He is God alone ;<br/>
+            Praise Him for the wonders He to us hath shown ; <br/>
+            For His promised presence all the pilgrim way, <br/>
+            For the flaming pillar, and the cloud by day. 
+            
+            <div class="chorus">
+            Praise . . . Him, shining angels, <br/>
+            Strike . . . your harps of gold, . . <br/>
+            All . . . His hosts adore Him, <br/>
+            Who ... His face behold : . . <br/>
+            Through . . . His great domin - ion, <br/>
+            While . . . the ages roll, . . <br/>
+            All His works shall praise Him, all His <br/>
+            works shall praise Him, <br/>
+            All His works shall praise Him ; bless the <br/>
+            Lord, my soul ! 
+          </div>
+          
+            2 Praise Him for redemption, free to every soul ;  <br/>
+            Praise Him for the Fountain that can make us whole ;<br/>
+            For His gifts of kindness and His loving care, <br/>
+            For the blest assurance that He answers prayer.<br/>
+            <br/>
+            3 Praise Him for the trials sent as cords of love, <br/>
+            Binding us more closely to the things above ;<br/>
+            For the faith that conquers, hope, that naught can dim, <br/>
+            For the land where loved ones gather unto Him. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(209)){
+	if (localStorage.getItem(209).toString() == '209'){
+		localStorage.setItem(209, '0');
+	}else{
+		localStorage.setItem(209, '209');
+	}
+}else{
+	localStorage.setItem(209, '209');
+}
+}
+
+if (localStorage.getItem(209).toString() == '209'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

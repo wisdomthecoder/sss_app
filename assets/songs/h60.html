@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Jesus, the very thought of Thee<br/>
+    With sweetness fills my breast;<br/>
+    But sweeter far Thy face to see,<br/>
+    And in Thy presence rest.<br/>
+    <br/>
+    2 Nor voice can sing, nor heart can frame,<br/>
+    Nor can the memory find<br/>
+    A sweeter sound than Thy blest name,<br/>
+    O Saviour of mankind !<br/>
+    <br/>
+    3 Oh hope of every contrite heart !<br/>
+    Oh, joy of all the meek !<br/>
+    To those who fall, how kind Thou art !<br/>
+    How good to those who seek !<br/>
+    <br/>
+    4 And those who find Thee, find a bliss<br/>
+    Nor tongue nor pen can show ;<br/>
+    The love of Jesus,what it is<br/>
+    None but His loved ones know.<br/>
+    
+    5 Jesus ! our only joy be Thou,<br/>
+    As Thou our prize wilt be;<br/>
+    Jesus ! be Thou our glory now,<br/>
+    And through eternity.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(60)){
+	if (localStorage.getItem(60).toString() == '60'){
+		localStorage.setItem(60, '0');
+	}else{
+		localStorage.setItem(60, '60');
+	}
+}else{
+	localStorage.setItem(60, '60');
+}
+}
+
+if (localStorage.getItem(60).toString() == '60'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Free from the law, oh, happy condition!<br/>
+            Jesus hath bled, and there is remission!<br/>
+            Cursed by the law, and bruised by the fall,<br/>
+            Grace hath redeemed us once for all.
+
+    <div class="chorus"> 
+            Once for all, O sinner, receive it;<br/>
+            Once for all, O brother, believe it:<br/>
+            Cling to the Cross, the burden will fall;<br/>
+            Christ hath redeemed us once for all.</div>
+    
+            2 Now are we free—there's no condemnation,<br/>
+            Jesus provides a perfect salvation;<br/>
+            “Come unto Me—oh, hear His sweet call,<br/>
+            Come, and He saves us once for all.<br/>
+            <br/>
+            3Children of God ! oh, glorious calling!;<br/>
+            Surely His grace will keep us from falling<br/>
+            Passing from death to life at His call,<br/>
+            Blessed salvation once for all.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(143)){
+	if (localStorage.getItem(143).toString() == '143'){
+		localStorage.setItem(143, '0');
+	}else{
+		localStorage.setItem(143, '143');
+	}
+}else{
+	localStorage.setItem(143, '143');
+}
+}
+
+if (localStorage.getItem(143).toString() == '143'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

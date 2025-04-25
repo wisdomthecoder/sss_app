@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<div class="w3-container m1">
+  <p>1 Enthroned is Jesus now<br/>
+            Upon His heavenly seat;<br/>
+            The kingly crown is on His brow,<br/>
+            The saints are at His feet.
+
+    <div class="chorus"> 
+            There . . . with the glorified,<br/>
+            Safe ... by our Saviour's side,<br/>
+            We shall be satisfied by-and-by I<br/>
+            By- - - and-by 1 . . by- - - and-by<br/>
+            We shall be satisfied by-and-by I</div>
+    
+            2 In shining white they stand,<br/>
+            A great and countless throng;<br/>
+            A palmy sceptre in each hand,<br/>
+            On every lip a song.<br/>
+            <br/>
+            3 They sing the Lamb of God,<br/>
+            Once slain on earth for them;<br/>
+            The Lamb through whose atoning blood<br/>
+            Each wears his diadem.<br/>
+            <br/>
+            4 Thy grace, O Holy Ghost,<br/>
+            Thy blessed help supply,<br/>
+            That we may join that radiant host,<br/>
+            Triumphant in the sky !</p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(136)){
+	if (localStorage.getItem(136).toString() == '136'){
+		localStorage.setItem(136, '0');
+	}else{
+		localStorage.setItem(136, '136');
+	}
+}else{
+	localStorage.setItem(136, '136');
+}
+}
+
+if (localStorage.getItem(136).toString() == '136'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

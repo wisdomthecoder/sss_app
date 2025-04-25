@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Low in the grave He lay—<br/>
+            Jesus, my Saviour !<br/>
+            Waiting the coming day—<br/>
+            Jesus, my Lord !
+
+    <div class="chorus"> 
+            Up from the grave He arose, . . .<br/>
+            With a mighty triumph o'er His foes ; . ..<br/>
+            He arose a Victor from the dark domain,<br/>
+            And He lives for ever with His saints to reign:<br/>
+            He arose ! . . . He arose ! . ..<br/>
+            Hallelujah ! Christ arose !</div>
+    
+            2 Vainly they watch His bed—<br/>
+            Jesus, my Saviour !<br/>
+            Vainly they seal the dead—<br/>
+            Jesus, my Lord !<br/>
+            <br/>
+            3 Death cannot keep his prey—<br/>
+            Jesus, my Saviour !<br/>
+            He tore the bars away—<br/>
+            Jesus, my Lord !<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(152)){
+	if (localStorage.getItem(152).toString() == '152'){
+		localStorage.setItem(152, '0');
+	}else{
+		localStorage.setItem(152, '152');
+	}
+}else{
+	localStorage.setItem(152, '152');
+}
+}
+
+if (localStorage.getItem(152).toString() == '152'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

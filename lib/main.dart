@@ -25,8 +25,8 @@ void main() async {
   // if it's not on the web, windows or android, load the accent color
   if (!kIsWeb &&
       [
-        TargetPlatform.windows,
         TargetPlatform.android,
+        TargetPlatform.windows,
       ].contains(defaultTargetPlatform)) {}
 
   if (isDesktop) {
@@ -35,7 +35,7 @@ void main() async {
     if (defaultTargetPlatform == TargetPlatform.windows) {
       await flutter_acrylic.Window.setEffect(effect: WindowEffect.transparent);
     }
-    await windowManager.setSize(Size(300, 300));
+    // await windowManager.setSize(Size(300, 300));
     await windowManager.setAlignment(Alignment.center);
 
     await windowManager.focus();

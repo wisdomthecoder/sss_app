@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 He hath spoken, Be still, the Rebuker of seas<br/>
+    The command was for me, and my heart is at ease ; <br/>
+    He hath hushed into silence the waves <br/>
+    and the winds, [my sins. <br/>
+    By applying His blood and removing <br/>
+    He's the Prince of Peacemakers, all glory to God,
+
+    <div class="chorus"> 
+    To redeem me, and cleanse me, He shed His own blood ;  <br/>
+    My adoption is sealed, I'm a child of the King, <br/>
+    And for ever and ever of Jesus I'll sing. </div>
+    
+    2 He hath quickened my soul by a life <br/>
+    from above ; [is love, <br/>
+    It was done by the Spirit, its essence <br/>
+    He hath pardoned and washed me as white as the snow, <br/>
+    And my heart with His love does this moment overflow. <br/>
+    <br/>
+    3 He's a wonderful Jesus, this Saviour of mine ; <br/>
+    He's the great Son of God — a Redeemer Divine ; <br/>
+    He's my Strength and my Wisdom, <br/>
+    my Life and my Lord, <br/>
+    And enthroned in my heart to be loved and adored. <br/>
+    <br/>
+    4 I will love Him, and serve Him from now till I die ; <br/>
+    For His love fills my heart, and His beauty my eye, <br/>
+    He's the fairest and dearest of all to my soul,<br/>
+    And our lives shall be one, while eternities roll.</p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(95)){
+	if (localStorage.getItem(95).toString() == '95'){
+		localStorage.setItem(95, '0');
+	}else{
+		localStorage.setItem(95, '95');
+	}
+}else{
+	localStorage.setItem(95, '95');
+}
+}
+
+if (localStorage.getItem(95).toString() == '95'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

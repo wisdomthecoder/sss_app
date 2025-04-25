@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+<!-- 
+<body onbeforeunload="interz();">
+<div class="w3-bar w3-red w3-top pb">
+<button class="w3-bar-item w3-btn" onclick="javascript:stopPlayerz(); goBack();"><img src="pre.png"></button>
+  <div class="w3-bar-item  w3-display-middle"><h5>17</h5></div>
+  <button class="w3-bar-item w3-btn w3-display-right" onclick="javascript:shareitz();"><img src="share.png"></button>
+    <button id= "btns" class="w3-bar-item w3-btn" onclick="mm1(); bbbb();"><img id= "image" src="stars.png"></button>
+</div>
+    <div class="fixing">
+	        <div class="players">
+			 <button class="w3-button w3-teal w3-tiny" onclick="javascript:playz('a0017')">Play</button>
+			<button class="w3-button w3-red w3-tiny" onclick="javascript:stopPlayerz()">stop</button>&nbsp;&nbsp;
+			<div class="w3-show-inline-block">
+			<button class="w3-btn w3-black w3-round-large end w3-small"><img src="equalizers.gif"></button>
+			<button class="w3-btn w3-black w3-round-large start w3-small"><img src="equalizer.gif"></button>
+        </div>
+		</div>
+    </div> -->
+<div class="w3-container m1">
+  <p>God loved the world of sinners lost<br/>
+    And ruined by the Fall ;<br/>
+    Salvation full, at highest cost<br/>
+    He offers free to all.
+    
+    <div class="chorus">
+    Oh, 'twas love, 'twas wondrous love,<br/>
+    The love of God to me !<br/>
+    It brought my Saviour from above,<br/>
+    To die on Calvary.</div>
+
+    2 E'en now by faith I claim Him mine,<br/>
+    The risen Son of God ;<br/>
+    Redemption by His death I find,<br/>
+    And cleansing through the Blood.<br/>
+    <br/>
+    3 Love brings the glorious fullness in,<br/>
+    And to His saints makes known<br/>
+    The blessed rest from inbred sin,<br/>
+    Through faith in Christ alone.<br/>
+    <br/>
+    4 Believing souls, rejoicing go ;<br/>
+    There shall to you be given<br/>
+    A glorious foretaste, here below,<br/>
+    Of endless life in heaven.<br/>
+    <br/>
+    5 Of victory now o'er Satan's power<br/>
+    Let all the ransomed sing,<br/>
+    And triumph in the dying hour,<br/>
+    Through Christ the Lord, our King.<br/></p>
+</div>
+
+<script>
+function mm1(){
+if (localStorage.getItem(17)){
+	if (localStorage.getItem(17).toString() == '17'){
+		localStorage.setItem(17, '0');
+	}else{
+		localStorage.setItem(17, '17');
+	}
+}else{
+	localStorage.setItem(17, '17');
+}
+}
+
+if (localStorage.getItem(17).toString() == '17'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

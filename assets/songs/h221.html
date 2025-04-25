@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Glorious things of thee are spoken, <br/>
+            Zion, city of our God ! <br/>
+            He, whose word cannot be broken, <br/>
+            Formed thee for His own abode. <br/>
+            On the Rock of Ages founded, <br/>
+            What can shake thy sure repose ? <br/>
+            With salvation's walls surrounded, <br/>
+            Thou may'st smile at all thy foes. <br/>
+            <br/>
+            2 See, the streams of living waters, <br/>
+            Springing from eternal love, <br/>
+            Well supply thy sons and daughters, <br/>
+            And all fear of want remove : <br/>
+            Who can faint, while such a river <br/>
+            Ever flows their thirst t' assuage ? ---- <br/>
+            Grace, which, like the Lord, the giver, <br/>
+            Never fails from age to age. <br/>
+            <br/>
+            3 Round each habitation hovering, <br/>
+            See the cloud and fire appear ! <br/>
+            For a glory and a covering, <br/>
+            Showing that the Lord is near ; <br/>
+            He who gives them daily manna, <br/>
+            He who listens when they cry-----<br/>
+            Let Him hear the loud hosanna, <br/>
+            Rising to His throne on high. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(221)){
+	if (localStorage.getItem(221).toString() == '221'){
+		localStorage.setItem(221, '0');
+	}else{
+		localStorage.setItem(221, '221');
+	}
+}else{
+	localStorage.setItem(221, '221');
+}
+}
+
+if (localStorage.getItem(221).toString() == '221'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

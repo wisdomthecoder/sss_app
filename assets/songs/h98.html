@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Thou art fairer than the morning, <br/>
+    O my Saviour and my King ! <br/>
+    Of Thy grandeur and Thy beauty, <br/>
+    How my soul delights to sing. 
+
+    <div class="chorus"> 
+    Thou art fair - - er than the morning, <br/>
+    Thou art brighter, brighter than the day ; <br/>
+    At the glo - - ry of Thy presence <br/>
+    Clouds and darkness flee away. </div>
+    
+    2 Clothed in light as with a garment, <br/>
+    Crowned with majesty Divine, <br/>
+    Lo, the sceptre of dominion <br/>
+    Now and ever, Lord, is Thine. <br/>
+    <br/>
+    3 Oh, the greatness of Thy mercy, <br/>
+    And the richness of Thy grace ! <br/>
+    Oh, the love that in Thy kingdom <br/>
+    Is preparing me a place ! <br/>
+    <br/>
+    4 When the silver cord is broken, <br/>
+    And this mortal life is o'er, <br/>
+    With ten thousand times ten thousand <br/>
+    I shall sing for evermore. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(98)){
+	if (localStorage.getItem(98).toString() == '98'){
+		localStorage.setItem(98, '0');
+	}else{
+		localStorage.setItem(98, '98');
+	}
+}else{
+	localStorage.setItem(98, '98');
+}
+}
+
+if (localStorage.getItem(98).toString() == '98'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

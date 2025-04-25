@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Safe in the arms of Jesus, <br />
+    Safe on His gentle breast, <br />
+    There by His love o'ershaded, <br />
+    Sweetly my soul shall rest. <br />
+    Hark ! 'tis the voice of angels <br />
+    Borne in a song to me, <br />
+    Over the fields of glory, <br /> <br />
+    Over the jasper sea.
+
+  <div class="chorus">
+    Safe in the arms of Jesus, <br />
+    Safe on His gentle breast ; <br />
+    There by His love o'ershaded, <br />
+    Sweetly my soul shall rest.
+  </div>
+  
+  2 Safe in the arms of Jesus, <br />
+  Safe from corroding care, <br />
+  Safe from the world's temptations, <br />
+  Sin cannot harm me there. <br />
+  Free from the blight of sorrow, <br />
+  Free from my doubts and fears ; <br />
+  Only a few more trials, <br />
+  Only a few more tears. <br />
+  <br />
+  3 Jesus, my heart's dear refuge, <br />
+  Jesus has died for me; <br />
+  Firm on the Rock of Ages <br />
+  Ever my trust shall be. <br />
+  Here let me wait with patience, <br />
+  Wait till the night is o'er; <br />
+  Wait till I see the morning <br />
+  Break on the golden shore. <br /></p>
+</div>
+<script>
+  function mm1() {
+    if (localStorage.getItem(57)) {
+      if (localStorage.getItem(57).toString() == '57') {
+        localStorage.setItem(57, '0');
+      } else {
+        localStorage.setItem(57, '57');
+      }
+    } else {
+      localStorage.setItem(57, '57');
+    }
+  }
+
+  if (localStorage.getItem(57).toString() == '57') {
+    document.getElementById("btns").style.color = "blue";
+    document.getElementById("image").src = "stars1.png";
+  } else {
+    document.getElementById("btns").style.color = "white";
+    document.getElementById("image").src = "stars.png";
+  }
+  function bbbb() {
+    if (document.getElementById("btns").style.color == "blue") { document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png"; }
+    else { document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png"; }
+  }
+</script>
+<script src="hscript.js"></script>
+</body>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<!-- <body onbeforeunload="interz();">
+<div class="w3-bar w3-red w3-top pb">
+<button class="w3-bar-item w3-btn" onclick="javascript:stopPlayerz(); goBack();"><img src="pre.png"></button>
+  <div class="w3-bar-item  w3-display-middle"><h5>9</h5></div>
+  <button class="w3-bar-item w3-btn w3-display-right" onclick="javascript:shareitz();"><img src="share.png"></button>
+    <button id= "btns" class="w3-bar-item w3-btn" onclick="mm1(); bbbb();"><img id= "image" src="stars.png"></button>  
+</div>
+    <div class="fixing">
+	        <div class="players">
+			 <button class="w3-button w3-teal w3-tiny" onclick="javascript:playz('a0009')">Play</button>
+			<button class="w3-button w3-red w3-tiny" onclick="javascript:stopPlayerz()">stop</button>&nbsp;&nbsp;
+			<div class="w3-show-inline-block">
+			<button class="w3-btn w3-black w3-round-large end w3-small"><img src="equalizers.gif"></button>
+			<button class="w3-btn w3-black w3-round-large start w3-small"><img src="equalizer.gif"></button>
+        </div>
+		</div>
+    </div> -->
+<div class="w3-container m1">
+  <p>1 All people that on earth do dwell,<br/>
+    Sing to the Lord with cheerful voice:<br/>
+    Him serve with mirth, His praise<br/>
+    forth tell,<br/>
+    Come ye before Him and rejoice.<br/>
+    <br/>
+    2 Know that the Lord is God indeed,<br/>
+    Without our aid He did us make :<br/>
+    We are His flock.He doth us feed,<br/>
+    And for His sheep He doth us take.<br/>
+    <br/>
+    3 Oh, enter then His gates with praise,<br/>
+    Approach with joy His courts unto :<br/>
+    Praise,laud, and bless His name.<br/>
+    For it is seemly so to do. [always,<br/>
+    <br/>
+    4 For why ? the Lord our God is good,<br/>
+    His mercy is for ever sure ;<br/>
+    His truth at all times firmly stood,<br/>
+    And shall from age to age endure.<br/></p>
+</div>
+
+<script>
+function mm1(){
+if (localStorage.getItem(9)){
+	if (localStorage.getItem(9).toString() == '9'){
+		localStorage.setItem(9, '0');
+	}else{
+		localStorage.setItem(9, '9');
+	}
+}else{
+	localStorage.setItem(9, '9');
+}
+}{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+
+
+if (localStorage.getItem(9).toString() == '9'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

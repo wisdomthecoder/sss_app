@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sss_app/config/utils.dart';
+import 'package:sss_app/view/desktop/top_tile/top_tile_view.dart';
 import 'package:sss_app/view/desktop/widgets/footer.dart';
-import 'package:sss_app/view/desktop/widgets/side_panel.dart';
+import 'package:sss_app/view/desktop/side_bar/side_bar.dart';
 import 'package:window_manager/window_manager.dart';
 
 class DesktopHome extends StatefulWidget {
@@ -37,8 +38,10 @@ class _DesktopHomeState extends State<DesktopHome> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Container(
+          SizedBox(
             height: isFullScreen ? 0 : 100,
+            width: double.infinity,
+            child: TopTileView(),
           ),
           Expanded(
             child: Row(

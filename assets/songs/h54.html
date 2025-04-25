@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<div class="w3-container m1">
+  <p>1 Come, sing the sweet song of the <br/>
+    ages — <br/>
+    The song of Immanuel sing !<br/>
+    There comes through the portals eternal<br/>
+    An anthem of praise to the King ! 
+
+    <div class="chorus">
+    Then loud let our carols of gladness <br/>
+    Re-echo the song of the skies ; <br/>
+    Once more to the tidings of glory <br/>
+    The earth in its fulness replies. 
+    </div>
+    2 Foretold by the word of the prophets ; <br/>
+    Decreed by the wisdom of God ; <br/>
+    We hail the fulfilment of mercy, <br/>
+    We praise our Redeemer and Lord. <br/>
+    <br/>
+    3 The centuries sing of His coming ; <br/>
+    The nations His wonders proclaim ; <br/>
+    And ever increasing in glory, <br/>
+    We sing of His wonderful name. <br/>
+    4 The song that is sweetest and noblest <br/>
+    We sing to the Lord we adore ; <br/>
+    And crown Him who comes to <br/>
+    redeem us — <br/>
+    Immanuel, King evermore ! <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(54)){
+	if (localStorage.getItem(54).toString() == '54'){
+		localStorage.setItem(54, '0');
+	}else{
+		localStorage.setItem(54, '54');
+	}
+}else{
+	localStorage.setItem(54, '54');
+}
+}
+
+if (localStorage.getItem(54).toString() == '54'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

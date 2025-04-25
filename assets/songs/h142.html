@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Nothing either great or small—<br/>
+            Nothing, sinner, no;<br/>
+            Jesus did it, did it all,<br/>
+            Long, long ago.
+
+    <div class="chorus"> 
+            It is finished !yes, indeed,<br/>
+            Finished every jot :<br/>
+            Sinner, this is all you need—<br/>
+            Tell me, is it not ?</div>
+    
+            2 When He, from His lofty throne,<br/>
+            Stooped to do and die.<br/>
+            Everything was fully done:<br/>
+            Hearken to His cry.<br/>
+            <br/>
+            3 Weary, working, burdened one,<br/>
+            Wherefore toil you so ?<br/>
+            Cease your doing ; all was done<br/>
+            Long, long ago.<br/>
+            <br/>
+            4 Till to Jesus' work you cling<br/>
+            By a simple faith,<br/>
+            “Doing is a deadly thing—<br/>
+            “Doing ends in death.<br/>
+            <br/>
+            5 Cast your deadly<br/>
+            doing down —<br/>
+            Down at Jesus' feet;<br/>
+            Stand in Him, in Him alone,<br/>
+            Gloriously complete.</p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(142)){
+	if (localStorage.getItem(142).toString() == '142'){
+		localStorage.setItem(142, '0');
+	}else{
+		localStorage.setItem(142, '142');
+	}
+}else{
+	localStorage.setItem(142, '142');
+}
+}
+
+if (localStorage.getItem(142).toString() == '142'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

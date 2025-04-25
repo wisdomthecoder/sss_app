@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 In the crimson blush of morning <br/>
+            In the glitter of the noon, <br/>
+            In the midnight's gloomy darkness, <br/>
+            Or the gleaming of the moon. <br/>
+            In the stillness of the twilight, <br/>
+            As it shimmers in the sky, <br/>
+            We are watching, we are waiting, <br/>
+            For the end that draweth nigh. <br/>
+            <br/>
+            2 We shall see our Lord in splendour, <br/>
+            And amid a countless throng, <br/>
+            On the clouds to earth descending, <br/>
+            With a movement swift and strong ; <br/>
+            And the angels round about Him, <br/>
+            In their dazzling white array, <br/>
+            While before Him sounds the summons <br/>
+            For the final Judgment-day. <br/>
+            <br/>
+            3 He will welcome all His people, <br/>
+            He will diadem His own ; <br/>
+            He will show to them His glory, <br/>
+            And will share with them His throne ; <br/>
+            And for ever in His presence <br/>
+            They shall see Him face to face, <br/>
+            While they chant His matchless <br/>
+            wisdom, <br/>
+            And extol His wondrous grace. <br/>
+            <br/>
+            4 He is coming, surely coming, <br/>
+            For His promise cannot fail ; <br/>
+            And the scoffers shall behold Him ? <br/>
+            And before Him they shall quail !<br/>
+            He is coming, quickly coming ! <br/>
+            But His coming we shall greet ; <br/>
+            We have waited for His advent, <br/>
+            And have listened for His feet. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(179)){
+	if (localStorage.getItem(179).toString() == '179'){
+		localStorage.setItem(179, '0');
+	}else{
+		localStorage.setItem(179, '179');
+	}
+}else{
+	localStorage.setItem(179, '179');
+}
+}
+
+if (localStorage.getItem(179).toString() == '179'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

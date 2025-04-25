@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container" style="margin-top:100px">
+  <p>1 Oh, could I speak the matchless worth, <br/>
+            Oh, could I sound the glories forth <br/>
+            Which in my Saviour shine, <br/>
+            I'd soar, and touch the heavenly strings, <br/>
+            And vie with Gabriel, while he sings <br/>
+            In notes almost divine. <br/>
+            <br/>
+            2 I'd sing the precious blood He spilt, <br/>
+            My ransom from the dreadful guilt <br/>
+            Of sin, and wrath divine : <br/>
+            I'd sing His glorious righteousness, <br/>
+            In which all -perfect, heavenly dress <br/>
+            My soul shall ever shine. <br/>
+            <br/>
+            3 I'd sing the characters He bears, <br/>
+            And all the forms of love He wears, <br/>
+            Exalted on His throne : <br/>
+            In loftiest songs of sweetest praise <br/>
+            I would, to everlasting days, <br/>
+            Make all His glories known. <br/>
+            <br/>
+            4 Well, the delightful day will come <br/>
+            When my dear Lord will take me home, <br/>
+            And I shall see His face ; <br/>
+            Then with my Saviour, Brother, Friend, <br/>
+            A blest eternity I'll spend,<br/>
+            Triumphant in His grace ! <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(205)){
+	if (localStorage.getItem(205).toString() == '205'){
+		localStorage.setItem(205, '0');
+	}else{
+		localStorage.setItem(205, '205');
+	}
+}else{
+	localStorage.setItem(205, '205');
+}
+}
+
+if (localStorage.getItem(205).toString() == '205'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

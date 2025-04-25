@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Jesus, my Saviour, is all things to me; <br/>
+    Oh, what a wonderful Saviour is He! <br/>
+    Guiding, protecting, o'er life's troubled sea, <br/>
+    Mighty Deliverer — Jesus for me ! 
+
+    <div class="chorus"> 
+    Jesus for me ! Jesus for me ! <br/>
+    All the time, everywhere, Jesus for me </div>
+    
+    2 Jesus in sickness, and Jesus in health, <br/>
+    Jesus in poverty, comfort or wealth, <br/>
+    Sunshine or tempest, whatever it be, <br/>
+    He is my Safety — Jesus for me ! <br/>
+    <br/>
+    3 He is my Refuge, my Rock, and my <br/>
+    Tower — [my Power ; <br/>
+    He is my Fortress, my Strength and <br/>
+    Life Everlasting, my Daysman is He, <br/>
+    Blessed Redeemer — Jesus for me ! <br/>
+    <br/>
+    4 He is my Prophet, my Priest, and my King ; <br/>
+    He is my Bread of Life, Fountain and Spring ; <br/>
+    Bright Sun of Righteousness, Day-star is He ; <br/>
+    Horn of Salvation — Jesus for me ! <br/>
+    <br/>
+    5 Jesus in sorrow, in joy, or in pain : <br/>
+    Jesus my Treasure, in loss or in gain ; <br/>
+    Constant Companion where'er I may be, <br/>
+    Living or dying — Jesus for me ! <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(90)){
+	if (localStorage.getItem(90).toString() == '90'){
+		localStorage.setItem(90, '0');
+	}else{
+		localStorage.setItem(90, '90');
+	}
+}else{
+	localStorage.setItem(90, '90');
+}
+}
+
+if (localStorage.getItem(90).toString() == '90'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

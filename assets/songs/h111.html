@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Joy to the world; the Lord is come!<br/>
+            Let earth receive her King;<br/>
+            Let every heart prepare Him room,<br/>
+            And heaven and nature sing.<br/>
+            <br/>
+            2 Joy to the world; the Saviour reigns!<br/>
+            Let men their songs employ;<br/>
+            While fields and floods, rocks, hills, and plains,<br/>
+            Repeat the sounding joy.<br/>
+            <br/>
+            3 He rules the world with truth and grace;<br/>
+            And makes the nations prove<br/>
+            The glories of His righteousness,<br/>
+            And wonders of His love.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(111)){
+	if (localStorage.getItem(111).toString() == '111'){
+		localStorage.setItem(111, '0');
+	}else{
+		localStorage.setItem(111, '111');
+	}
+}else{
+	localStorage.setItem(111, '111');
+}
+}
+
+if (localStorage.getItem(111).toString() == '111'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

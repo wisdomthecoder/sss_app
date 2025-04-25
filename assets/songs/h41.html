@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<div class="w3-container m1">
+  <p>1 I have heard of Jesus in Bethlehem born,<br />
+    Of whom it hath been said,<br />
+    That a star the wise men followed from far,<br />
+    Till they reached His lowly bed.
+  <div class="chorus">
+    He is my Saviour ! This same Jesus of<br />
+    whom I've heard ;<br />
+    He is my Saviour! I've found it in His Word.
+  </div>
+  2 I have heard of Jesus on Galilee's wave;<br />
+  The wind obeyed His will,<br />
+  And the sea grew calm at hearing His voice<br />
+  In the wondrous Peace,be still !<br />
+  <br />
+  3 I have heard of Jesus at Bethany's home,<br />
+  When standing by the grave,<br />
+  How He cried, Come forth, O Lazarus,now!<br />
+  In His mighty power to save.<br />
+  <br />
+  4 I have heard of Jesus on Calvary's brow,<br />
+  He died a Saviour true ; <br />
+  And He said, Forgive them, Father,<br />
+  I pray, For they know not what they do.<br />
+  <br />
+  5 I have heard of Jesus in sepulchre laid,<br />
+  In death's dark, sullen gloom ;<br />
+  How He burst the bars, and rising, came forth,<br />
+  Mighty Victor from the tomb.<br /></p>
+</div>
+<script>
+  function mm1() {
+    if (localStorage.getItem(41)) {
+      if (localStorage.getItem(41).toString() == '41') {
+        localStorage.setItem(41, '0');
+      } else {
+        localStorage.setItem(41, '41');
+      }
+    } else {
+      localStorage.setItem(41, '41');
+    }
+  }
+
+  if (localStorage.getItem(41).toString() == '41') {
+    document.getElementById("btns").style.color = "blue";
+    document.getElementById("image").src = "stars1.png";
+  } else {
+    document.getElementById("btns").style.color = "white";
+    document.getElementById("image").src = "stars.png";
+  }
+  function bbbb() {
+    if (document.getElementById("btns").style.color == "blue") { document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png"; }
+    else { document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png"; }
+  }
+</script>
+<script src="hscript.js"></script>
+</body>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 A lamp in the night, a song in time of sorrow, <br/>
+            A great glad hope which faith can ever borrow<br/>
+            To gild the passing day with the glory of the morrow, <br/>
+            Is the hope of the coming of the Lord.
+            
+            <div class="chorus">
+            Blessed hope, . . . blessed hope, . . . <br/>
+            Blessed hope of the coming of the Lord ; <br/>
+            How the aching heart it cheers ; <br/>
+            How it glistens through our tears, <br/>
+            Blessed hope of the coming of the Lord. 
+          </div>
+          
+            2 A star in the sky, a beacon bright to guide us ; <br/>
+            An anchor sure to hold when storms betide us ;<br/>
+            A refuge for the soul, where in quiet <br/>
+            we may hide us------ <br/>
+            Is the hope of the coming of the Lord. <br/>
+            <br/>
+            3 A call of command, like trumpet <br/>
+            clearly sounding,  <br/>
+            To make us bold when evil is surrounding; <br/>
+            To stir the sluggish heart, and to <br/>
+            keep in good abounding-----  <br/>
+            Is the hope of the coming of the Lord. <br/>
+            <br/>
+            4 A word from the One to all our hearts the dearest,  <br/>
+            A parting word to make Him aye the nearest ;<br/>
+            Of all His precious words, the sweetest, brightest, clearest, <br/>
+            Is the hope of the coming of the Lord. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(184)){
+	if (localStorage.getItem(184).toString() == '184'){
+		localStorage.setItem(184, '0');
+	}else{
+		localStorage.setItem(184, '184');
+	}
+}else{
+	localStorage.setItem(184, '184');
+}
+}
+
+if (localStorage.getItem(184).toString() == '184'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

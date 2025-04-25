@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 What means this eager, anxious throng,<br/>
+    Which moves with busy haste along <br/>
+    In accents hushed the throng reply,<br/>
+    Jesus of Nazareth passeth by<br/>
+    <br/>
+    2 Who is this Jesus ? Why should He<br/>
+    The city move so mightily ?<br/>
+    A passing stranger, has He skill<br/>
+    To move the multitude at will?<br/>
+    Again the stirring tones reply,<br/>
+    Jesus of Nazareth passeth by.<br/>
+    <br/>
+    3 Jesus ! 'tis He who once below<br/>
+    Man's pathway trod,'mid pain and woe;<br/>
+    And burdened ones, where'er He came,<br/>
+    Brought out their sick, and deaf,and lame:<br/>
+    The blind rejoiced to hear the cry,<br/>
+    Jesus of Nazareth passeth by.<br/>
+    <br/>
+    4 Again He comes ! From place to place<br/>
+    His holy footprints we can trace;<br/>
+    He pause that our threshold nay,<br/>
+    He enters condescends to stay:<br/>
+    Shall we not gladly raise the cry ?<br/>
+    Jesus of Nazareth passeth by.<br/>
+    <br/>
+    5 Ho ! all ye heavy-laden, come !<br/>
+    Here's pardon, comfort, rest, and home ;<br/>
+    Ye wanderers from a Father's face,<br/>
+    Return, accept His proffered grace;<br/>
+    Ye tempted ones, there's refuge nigh;<br/>
+    Jesus of Nazareth passeth by.<br/>
+    <br/>
+    6 But if you still His call refuse,<br/>
+    And allHis wondrous love abuse,<br/>
+    Soon will He sadly from you turn,<br/>
+    Your bitter prayer for pardon spurn.<br/>
+    Too late! too late! will be the cry <br/>
+    Jesus of Nazareth has passed by.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(77)){
+	if (localStorage.getItem(77).toString() == '77'){
+		localStorage.setItem(77, '0');
+	}else{
+		localStorage.setItem(77, '77');
+	}
+}else{
+	localStorage.setItem(77, '77');
+}
+}
+
+if (localStorage.getItem(77).toString() == '77'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

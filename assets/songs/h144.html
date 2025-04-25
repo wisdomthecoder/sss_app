@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 When God of old the way of life<br/>
+            Would teach to all His own,<br/>
+            He placed them safe beyond the reach<br/>
+            Of death, by blood alone.
+
+    <div class="chorus"> 
+            It is His word, . . God's precious word, . .<br/>
+            It stands for ever true :<br/>
+            When I the Lord . . shall see the blood, . .<br/>
+            I will pass over you.</div>
+    
+            2 By Christ, the sinless Lamb of God,<br/>
+            The precious blood was shed,<br/>
+            When He fulfilled God's holy Word,<br/>
+            And suffered in our stead.<br/>
+            <br/>
+            3 O soul, for thee salvation thus<br/>
+            By God is freely given;<br/>
+            The blood of Christ atones for sin,<br/>
+            And makes us meet for heaven.<br/>
+            <br/>
+            4 The wrath of God that was our due,<br/>
+            Upon the Lamb was laid;<br/>
+            And by the shedding of His blood<br/>
+            The debt for us was paid.<br/>
+            <br/>
+            5 How calm the judgment hour shall<br/>
+            To all who do obey [pass<br/>
+            The Word of God, and trust the blood,<br/>
+            And make that Word their stay !</p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(144)){
+	if (localStorage.getItem(144).toString() == '144'){
+		localStorage.setItem(144, '0');
+	}else{
+		localStorage.setItem(144, '144');
+	}
+}else{
+	localStorage.setItem(144, '144');
+}
+}
+
+if (localStorage.getItem(144).toString() == '144'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

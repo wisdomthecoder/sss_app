@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Father, in high heaven dwelling, <br/>
+            May our evening song be telling <br/>
+            Of Thy mercy large and free : <br/>
+            Through the day Thy love has fed us, <br/>
+            Through the day Thy care has led us, <br/>
+            With divinest charity. <br/>
+            <br/>
+            2 This day's sins, oh pardon, Saviour, <br/>
+            Evil thoughts, perverse behaviour, <br/>
+            Envy, pride, and vanity : <br/>
+            From the world, the flesh, deliverâ€” <br/>
+            Save us now, and save us ever, <br/>
+            O Thou Lamb of Calvary ! <br/>
+            <br/>
+            3 From enticements of the devil, <br/>
+            From the might of spirits evil, <br/>
+            Be our shield and panoply : <br/>
+            Let Thy power this night defend us, <br/>
+            And a heavenly peace attend us, <br/>
+            And angelic company. <br/>
+            <br/>
+            4 Whilst the night-dews are distilling, <br/>
+            Holy Ghost, each heart be filling <br/>
+            With Thine own serenity : <br/>
+            Softly let the eyes be closing, <br/>
+            Loving souls on Thee reposing, <br/>
+            Ever blessed Trinity ! <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(288)){
+	if (localStorage.getItem(288).toString() == '288'){
+		localStorage.setItem(288, '0');
+	}else{
+		localStorage.setItem(288, '288');
+	}
+}else{
+	localStorage.setItem(288, '288');
+}
+}
+
+if (localStorage.getItem(288).toString() == '288'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

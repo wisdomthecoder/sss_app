@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<div class="w3-container m1">
+  <p>1 One there is above all others,<br/>
+    Oh, how He loves !<br/>
+    His is love beyond a brother's,<br/>
+    Oh, how He loves !<br/>
+    Earthly friends may fail or leave us,<br/>
+    One day soothe, the next day grieve us;<br/>
+    But this Friend will ne'er deceive us ,<br/>
+    Oh, how He loves !<br/>
+    <br/>
+    2 Tis eternal life to know Him,<br/>
+    Oh, how He loves ! [Him,<br/>
+    Think, oh think,how much we owe<br/>
+    Oh, how He loves !<br/>
+    With His precious blood He bought us,<br/>
+    In the wilderness He sought us,<br/>
+    To His fold He safely brought us,<br/>
+    Oh, how He loves !<br/>
+    <br/>
+    3 Blessed Jesus ! would you know<br/>
+    Oh, how He loves ! [Him 1<br/>
+    Give yourselves entirely to Him,<br/>
+    Oh, how He loves !<br/>
+    Think no longer of the morrow,<br/>
+    From the past new courage borrow,<br/>
+    Jesus carries all your sorrow :<br/>
+    Oh, how He loves !<br/>
+    <br/>
+    4 All your sins shall be forgiven,<br/>
+    Oh, how He loves !<br/>
+    Backward shall your foes be driven,<br/>
+    Oh, how He loves !<br/>
+    Best of blessings He'll provide you,<br/>
+    Naught but good shall e'er betide you,<br/>
+    Safe to gloryHe will guide you,<br/>
+    Oh, how He loves !<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(65)){
+	if (localStorage.getItem(65).toString() == '65'){
+		localStorage.setItem(65, '0');
+	}else{
+		localStorage.setItem(65, '65');
+	}
+}else{
+	localStorage.setItem(65, '65');
+}
+}
+
+if (localStorage.getItem(65).toString() == '65'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

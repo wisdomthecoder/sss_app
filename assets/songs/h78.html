@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<div class="w3-container m1">
+  <p>1 Once I was dead in sin,<br/>
+    And hope within me died ;<br/>
+    But now I'm dead to sin,<br/>
+    With Jesus crucified.
+
+    <div class="chorus">
+    And can it be that  He loved me,<br/>
+    And gave Himself for me ?</div>
+    
+    2 O heightI cannot reach !<br/>
+    O depth I cannot sound :<br/>
+    O love, O boundless love,<br/>
+    In my Redeemer found !<br/>
+    <br/>
+    3 O cold,ungrateful heart,<br/>
+    That can from Jesus turn,<br/>
+    When living fires of love<br/>
+    Should on His altar burn.<br/>
+    <br/>
+    4 I live-- and yet not I,<br/>
+    But Christ that lives in me,<br/>
+    Who from the law of sin<br/>
+    And death hath made me free.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(78)){
+	if (localStorage.getItem(78).toString() == '78'){
+		localStorage.setItem(78, '0');
+	}else{
+		localStorage.setItem(78, '78');
+	}
+}else{
+	localStorage.setItem(78, '78');
+}
+}
+
+if (localStorage.getItem(78).toString() == '78'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

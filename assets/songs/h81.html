@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Sing, oh sing the old,old story<br/>
+    Of our Saviour's matchless love !<br/>
+    Sing of Jesus and His glory<br/>
+    With the ransomed host above !
+
+    <div class="chorus"> 
+    Sing, oh sing . . the love of Je - - sus !<br/>
+    Sound His prais- - es far and near ! . .<br/>
+    Sing the won - - drous story over,<br/>
+    Till the whole . . wide world shall hear !</div>
+    
+    2 Sing of love, to you so precious <br/>
+    Tell in song how Jesus died ;<br/>
+    Let sweet music draw the nations<br/>
+    To the dear Redeemer's side.<br/>
+    <br/>
+    3 Ye redeemed ones, sing the story !<br/>
+    Sing it o'er and o'er again!<br/>
+    Till from every land the people<br/>
+    Join to sing the glad refrain.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(81)){
+	if (localStorage.getItem(81).toString() == '81'){
+		localStorage.setItem(81, '0');
+	}else{
+		localStorage.setItem(81, '81');
+	}
+}else{
+	localStorage.setItem(81, '81');
+}
+}
+
+if (localStorage.getItem(81).toString() == '81'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

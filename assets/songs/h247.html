@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Oh, serve the Lord with gladness, <br/>
+            And come before His throne ; <br/>
+            He is the great Creator, <br/>
+            And He is God alone ; <br/>
+            The heavens declare His glory, <br/>
+            The earth His power displays ; <br/>
+            While millions without number <br/>
+            To Him glad anthems raise. <br/>
+            <br/>
+            Oh, serve the Lord with gladness,' <br/>
+            And come before His throne ! <br/>
+            He is our great Redeemer, <br/>
+            And He is God alone. <br/>
+            <br/>
+            2  Oh, serve the Lord with gladness, <br/>
+            And glad hosannas bring <br/>
+            To Him, the Sovereign Ruler, <br/>
+            The universal King ; <br/>
+            For ever through the ages <br/>
+            His truth unchanging stands; <br/>
+            Let all the nations fear Him, <br/>
+            And reverence His commands. <br/>
+            <br/>
+            3  Oh, serve the Lord with gladness, <br/>
+            His love to all proclaim ; <br/>
+            Exalt Him in the highest, <br/>
+            And spread abroad His fame ; <br/>
+            All majesty, dominion, <br/>
+            All power and glory, be <br/>
+            To Him who reigns in triumph, <br/>
+            Through all eternity. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(247)){
+	if (localStorage.getItem(247).toString() == '247'){
+		localStorage.setItem(247, '0');
+	}else{
+		localStorage.setItem(247, '247');
+	}
+}else{
+	localStorage.setItem(247, '247');
+}
+}
+
+if (localStorage.getItem(247).toString() == '247'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+    </div>
+<div class="w3-container m1">
+  <p>He lives and loves, our Saviour King ;<br/>
+    With joyful lips your tribute bring;<br/>
+    Repeat His praise, exalt His Name,<br/>
+    Whose grace and truth are still the same.
+    <div class="chorus">
+    His mercy flows, an endless stream,<br/>
+    To all eternity the same ;<br/>
+    To all eternity, to all eternity,<br/>
+    To all eternity the same.</div>
+    
+    2 His hand is strong, His Word endures,<br/>
+    His sacrifice our peace secures ;<br/>
+    From sin and death He doth redeem,<br/>
+    His changeless love be all our theme.<br/>
+    <br/>
+    3 Each day reveals His constant love,<br/>
+    With mercies newfrom heaven above ;<br/>
+    Thro' ages past His Word hath stood ;<br/>
+    Oh, taste and see that He is good !</p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(70)){
+	if (localStorage.getItem(70).toString() == '70'){
+		localStorage.setItem(70, '0');
+	}else{
+		localStorage.setItem(70, '70');
+	}
+}else{
+	localStorage.setItem(70, '70');
+}
+}
+
+if (localStorage.getItem(70).toString() == '70'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

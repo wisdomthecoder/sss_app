@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<div class="w3-container m1">
+  <p>1 I love Thy kingdom, Lord, <br/>
+            The house of Thine abode, <br/>
+            The Church our blest Redeemer saved <br/>
+            With His own precious blood. <br/>
+            <br/>
+            2 I love Thy Church, O God ! <br/>
+            Her walls before Thee stand, <br/>
+            Dear as the apple of Thine eye, <br/>
+            And graven on Thy hand. <br/>
+            <br/>
+            3 For her my tears shall fall, <br/>
+            For her my prayers ascend ; <br/>
+            To her my cares and toils be given, <br/>
+            Till toils and cares shall end. <br/>
+            <br/>
+            4 Beyond my highest joy <br/>
+            I prize her heavenly ways, <br/>
+            Her sweet communion, solemn vows, <br/>
+            Her hymns of love and praise. <br/>
+            <br/>
+            5 Sure as Thy truth shall last, <br/>
+            To Zion shall be given <br/>
+            The brightest glories earth can yield, <br/>
+            And brighter bliss of heaven. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(253)){
+	if (localStorage.getItem(253).toString() == '253'){
+		localStorage.setItem(253, '0');
+	}else{
+		localStorage.setItem(253, '253');
+	}
+}else{
+	localStorage.setItem(253, '253');
+}
+}
+
+if (localStorage.getItem(253).toString() == '253'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

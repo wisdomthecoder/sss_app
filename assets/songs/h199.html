@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Holy Ghost, with light divine, <br/>
+            Shine upon this heart of mine ; <br/>
+            Chase the shades of night away, <br/>
+            Turn my darkness into day. <br/>
+            <br/>
+            2 Holy Ghost, with power divine, <br/>
+            Cleanse this guilty heart of mine ; <br/>
+            Long hath sin, without control, <br/>
+            Held dominion o'er my soul. <br/>
+            <br/>
+            3 Holy Ghost, with joy divine, <br/>
+            Cheer this saddened heart of mine <br/>
+            Bid my many woes depart, <br/>
+            Heal my wounded, bleeding heart. <br/>
+            <br/>
+            4 Holy Spirit, all divine, <br/>
+            Dwell within this heart of mine ; <br/>
+            Cast down every idol-throne, <br/>
+            Reign supreme---- and reign alone ! <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(199)){
+	if (localStorage.getItem(199).toString() == '199'){
+		localStorage.setItem(199, '0');
+	}else{
+		localStorage.setItem(199, '199');
+	}
+}else{
+	localStorage.setItem(199, '199');
+}
+}
+
+if (localStorage.getItem(199).toString() == '199'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

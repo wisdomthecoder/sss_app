@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Lord, I have made Thy Word my choice, <br/>
+            My lasting heritage ; <br/>
+            There shall my noblest powers rejoice, <br/>
+            My warmest thoughts engage. <br/>
+            <br/>
+            2 I'll read the histories of Thy love, <br/>
+            And keep Thy laws in sight ; <br/>
+            While through the promises I rove <br/>
+            With ever fresh delight. <br/>
+            <br/>
+            3'Tis a broad land of wealth unknown, <br/>
+            Where springs of life arise, <br/>
+            Seeds of immortal bliss are sown, <br/>
+            And hidden glory lies. <br/>
+            <br/>
+            4 The best relief that mourners have, <br/>
+            It makes our sorrows blest ; <br/>
+            Our fairest hope beyond the grave, <br/>
+            And our eternal rest. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(260)){
+	if (localStorage.getItem(260).toString() == '260'){
+		localStorage.setItem(260, '0');
+	}else{
+		localStorage.setItem(260, '260');
+	}
+}else{
+	localStorage.setItem(260, '260');
+}
+}
+
+if (localStorage.getItem(260).toString() == '260'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

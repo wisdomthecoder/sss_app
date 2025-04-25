@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Oh for a thousand tongues to sing <br/>
+            My great Redeemer's praise ; <br/>
+            The glories of my God and King, <br/>
+            The triumphs of His grace. <br/>
+            <br/>
+            2 My gracious Master and my God, <br/>
+            Assist me to proclaim----- <br/>
+            To spread thro' all the earth abroad---- <br/>
+            The honours of Thy name. <br/>
+            <br/>
+            3 Jesus, the Name that charms our fears,<br/>
+            That bids our sorrows cease ; <br/>
+            'Tis music in the sinner's ears, <br/>
+            'Tis life, and health, and peace. <br/>
+            <br/>
+            4 He breaks the power of cancelled sin, <br/>
+            He sets the prisoner free ; <br/>
+            His blood can make the foulest clean, <br/>
+            His blood avails for me. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(243)){
+	if (localStorage.getItem(243).toString() == '243'){
+		localStorage.setItem(243, '0');
+	}else{
+		localStorage.setItem(243, '243');
+	}
+}else{
+	localStorage.setItem(243, '243');
+}
+}
+
+if (localStorage.getItem(243).toString() == '243'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

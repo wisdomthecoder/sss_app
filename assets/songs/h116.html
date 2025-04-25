@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 On Calvary's brow . . my Saviour died, . . <br/>
+            ‘Twas there my Lord . . was cruci-fied : . .<br/>
+            'Twas on the cross . . He bled for me, . . <br/>
+            And purchased there . . my pardon free.
+
+    <div class="chorus"> 
+            O Calvary ! dark Calvary !<br/>
+            Where Jesus shed His blood for me : . .<br/>
+            O Calvary 1 blest Calvary !<br/>
+            'Twas there my Saviour died for me.</div>
+    
+            2 ‘Mid rending rocks . . and darkening skies, . .<br/>
+            My Saviour bows . . His head and dies; . . <br/>
+            The opening vail . . reveals the way . .<br/>
+            To heaven's joys . . and endless day.<br/>
+            <br/>
+            3 O Jesus, Lord, . . how can it be, . .<br/>
+            That Thou shouldst give . . Thy life for me ?— . .<br/>
+            To bear the cross . . and agony, . .<br/>
+            In that dread hour . . on Calvary!,</p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(116)){
+	if (localStorage.getItem(116).toString() == '116'){
+		localStorage.setItem(116, '0');
+	}else{
+		localStorage.setItem(116, '116');
+	}
+}else{
+	localStorage.setItem(116, '116');
+}
+}
+
+if (localStorage.getItem(116).toString() == '116'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

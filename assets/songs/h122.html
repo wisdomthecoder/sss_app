@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>Oh, who is this that cometh<br/>
+            From Edom's crimson plain,<br/>
+            With wounded side, with garments dyed ?<br/>
+            Oh, tell me now Thy name,<br/>
+            I that saw thy soul's distress,<br/>
+            A ransom gave;<br/>
+            I that speak in righteousness,<br/>
+            Mighty to save !
+
+    <div class="chorus"> 
+            Mighty to save ! ..<br/>
+            Mighty to save ! . .<br/>
+            Lord, I'll trust Thy wondrous love,<br/>
+            Mighty to save !</div>
+    
+            2 Oh, why is Thine apparel<br/>
+            So very deeply dyed ?—<br/>
+            Like them that tread the wine-press red ?<br/>
+            Oh, why this crimson tide ?<br/>
+            I the wine-press trod alone,<br/>
+            'Neath darkening skies;<br/>
+            Of the people there was none<br/>
+            Mighty to save!<br/>
+            <br/>
+            3 O bleeding Lamb, my Saviour,<br/>
+            How couldst Thou bear this shame?<br/>
+            With mercy fraught, Thine arm hath<br/>
+            brought<br/>
+            Salvation in Thy name !<br/>
+            I the victory have won,<br/>
+            Conquered the grave:<br/>
+            Now the year of joy has come—<br/>
+            Mighty to save!</p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(122)){
+	if (localStorage.getItem(122).toString() == '122'){
+		localStorage.setItem(122, '0');
+	}else{
+		localStorage.setItem(122, '122');
+	}
+}else{
+	localStorage.setItem(122, '122');
+}
+}
+
+if (localStorage.getItem(122).toString() == '122'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

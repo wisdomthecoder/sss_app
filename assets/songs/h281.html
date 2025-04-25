@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+
+<div class="w3-container m1">
+  <p>1 Come, for the feast is spread ; <br/>
+            Hark to the call ! <br/>
+            Come to the Living Bread, <br/>
+            Broken for all ; <br/>
+            Come to His  house of wine, <br/>
+            Low on His breast recline ; <br/>
+            All that He hath is thine ; <br/>
+            Come, sinner, come. <br/>
+            <br/>
+            2 Come where the fountain flows- <br/>
+            River of life----<br/>
+            Healing for all thy woes, <br/>
+            Doubting, and strife ; <br/>
+            Millions have been supplied, <br/>
+            No one was e'er denied ; <br/>
+            Come to the crimson tide, <br/>
+            Come, sinner, come. <br/>
+            <br/>
+            3 Come to the throne of grace, <br/>
+            Boldly draw near ; <br/>
+            He who would win the race <br/>
+            Must tarry here ; <br/>
+            Whate'er thy want may be <br/>
+            Here is the grace for thee, <br/>
+            Jesus thy only plea : <br/>
+            Come, Christian, come. <br/>
+            <br/>
+            4 Come to the Better Land, <br/>
+            Pilgrim, make haste ! <br/>
+            Earth is a foreign strand---- <br/>
+            Wilderness waste ! <br/>
+            Here are the harps of gold, <br/>
+            Here are the joys untold---- <br/>
+            Crowns for the young and old : <br/>
+            Come, pilgrim, come. <br/>
+            <br/>
+            5 Jesus, we come to Thee, <br/>
+            Oh, take us in ! <br/>
+            Set Thou our spirits free ; <br/>
+            Cleanse us from sin ! <br/>
+            Then, in yon land of light, <br/>
+            Clothed in our robes of white, <br/>
+            Resting not day nor night, <br/>
+            Thee will we sing. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(281)){
+	if (localStorage.getItem(281).toString() == '281'){
+		localStorage.setItem(281, '0');
+	}else{
+		localStorage.setItem(281, '281');
+	}
+}else{
+	localStorage.setItem(281, '281');
+}
+}
+
+if (localStorage.getItem(281).toString() == '281'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Rejoice and be glad ! the Redeemer has come ! <br/>
+            Go look on His cradle, His cross, and His tomb.
+            
+            <div class="chorus">
+            Sound His praises ! tell the story of Him who was slain !<br/>
+            Sound His praises ! tell with gladness, He liveth again I 
+          </div>
+          
+            2 Rejoice and be glad ! it is sunshine at last !. <br/>
+            The clouds have departed, the shadows are past<br/>
+            <br/>
+            3 Rejoice and be glad ! for the blood hath been shed ; <br/>
+            Redemption is finished, the price hath been paid. <br/>
+            <br/>
+            4 Rejoice and be glad ! now the pardon is free !  <br/>
+            The Just for the unjust has died on the tree.<br/>
+            <br/>
+            5 Rejoice and be glad ! for the Lamb that was slain. <br/>
+            O'er death is triumphant, and liveth again<br/>
+            <br/>
+            6 Rejoice and be glad ! for our King is on high ; <br/>
+            He pleadeth for us on His throne in the sky.<br/>
+            <br/>
+            7 Rejoice and be glad ! for He cometh again ; <br/>
+            He cometh in glory, the Lamb that was slain.<br/>
+            <br/>
+            Sound His praises ! tell the story of Him who was slain ! <br/>
+            Sound His praises ! tell with gladness, He cometh again !<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(224)){
+	if (localStorage.getItem(224).toString() == '224'){
+		localStorage.setItem(224, '0');
+	}else{
+		localStorage.setItem(224, '224');
+	}
+}else{
+	localStorage.setItem(224, '224');
+}
+}
+
+if (localStorage.getItem(224).toString() == '224'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

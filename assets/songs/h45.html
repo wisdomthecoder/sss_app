@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<div class="w3-container m1">
+  <p>'1 Tis known on earth and heaven too,<br/>
+    'Tis sweet to me because 'tis true ;<br/>
+    The old, old story is ever new ;<br/>
+    Tell me more about Jesus !
+
+    <div class="chorus">
+    Tell me more about JesusI <br/>
+    Tell me more about Jesus ! <br/>
+    Him would I know who loved me so :<br/>
+    Tell me more about Jesus! 
+    </div>
+    
+    2 Earth's fairest flowers will droop and die,<br/>
+    Dark clouds o'erspread yon azure sky ;<br/>
+    Life's dearest joys flit fleetest by ;<br/>
+    Tell me more about Jesus !<br/>
+    <br/>
+    3 When overwhelmed with unbelief,<br/>
+    When burdened with a blinding grief<br/>
+    Come kindly then to my relief;<br/>
+    Tell me more about Jesus !<br/>
+    <br/>
+    4 And when the glory-land I see,<br/>
+    And take the place preparedfor me, <br/>
+    Through endless years my song shall be-<br/>
+    Tell me more about Jesus !  <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(45)){
+	if (localStorage.getItem(45).toString() == '45'){
+		localStorage.setItem(45, '0');
+	}else{
+		localStorage.setItem(45, '45');
+	}
+}else{
+	localStorage.setItem(45, '45');
+}
+}
+
+if (localStorage.getItem(45).toString() == '45'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

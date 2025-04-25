@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Rejoice, the Lord is King !<br/>
+            Your God and King adore;<br/>
+            Mortals, give thanks and sing,<br/>
+            And triumph evermore:<br/>
+            Lift up the heart, lift up the voice:<br/>
+            Rejoice aloud, ye saints, rejoice !<br/>
+            <br/>
+            2 Rejoice ! the Saviour reigns—<br/>
+            The God of truth and love;<br/>
+            When He had purged our stains,<br/>
+            He took His seat above:<br/>
+            Lift up the heart, lift up the voice:<br/>
+            Rejoice aloud, ye saints, rejoice!<br/>
+            <br/>
+            3 He all His foes shall quell,<br/>
+            Shall all our sins destroy;<br/>
+            And every bosom swell<br/>
+            With pure, seraphic joy;<br/>
+            Lift up the heart, lift up the voice:<br/>
+            Rejoice aloud, ye saints, rejoice !<br/>
+            <br/>
+            4 Rejoice in glorious hope !<br/>
+            Jesus, the Judge, shall come,<br/>
+            And take His servants up<br/>
+            To their eternal home:<br/>
+            We soon shall hear th' archangel's voice:<br/>
+            The trump of God shall sound:<br/>
+            Rejoice !<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(155)){
+	if (localStorage.getItem(155).toString() == '155'){
+		localStorage.setItem(155, '0');
+	}else{
+		localStorage.setItem(155, '155');
+	}
+}else{
+	localStorage.setItem(155, '155');
+}
+}
+
+if (localStorage.getItem(155).toString() == '155'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

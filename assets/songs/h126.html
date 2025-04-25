@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<div class="w3-container m1">
+  <p>1 O sacred Head once wounded,<br/>
+            With grief and pain weighed down ,<br/>
+            How scornfully surrounded<br/>
+            With thorns, Thine only crown !<br/>
+            How art Thou pale with anguish,<br/>
+            With sore abuse and scorn !<br/>
+            How does that visage languish,<br/>
+            Which once was bright as morn.<br/>
+            <br/>
+            2 O sacred Head, what glory,<br/>
+            What bliss till now was Thine !<br/>
+            Yet, though despised and gory,<br/>
+            I joy to call Thee mine:<br/>
+            Thy grief and Thy compassion<br/>
+            Were all for sinners' gain;<br/>
+            Mine, mine was the transgression,<br/>
+            But Thine the deadly pain.<br/>
+            <br/>
+            3 What language shall I borrow,<br/>
+            To praise Thee, heavenly Friend,<br/>
+            For this Thy dying sorrow,<br/>
+            Thy pity without end ?<br/>
+            Lord, make me Thine for ever,<br/>
+            Nor let me faithless prove;<br/>
+            Oh, let me never, never<br/>
+            Abuse such dying love !</p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(126)){
+	if (localStorage.getItem(126).toString() == '126'){
+		localStorage.setItem(126, '0');
+	}else{
+		localStorage.setItem(126, '126');
+	}
+}else{
+	localStorage.setItem(126, '126');
+}
+}
+
+if (localStorage.getItem(126).toString() == '126'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

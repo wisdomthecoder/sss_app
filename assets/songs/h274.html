@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Lord of the Sabbath ! hear our vows <br/>
+            On this Thy day, in this Thy house ; <br/>
+            And own, as grateful sacrifice, <br/>
+            The songs which from the desert rise. <br/>
+            <br/>
+            2 Thine earthly Sabbaths, Lord, we love; <br/>
+            But there's a nobler rest above : <br/>
+            To that our labouring souls aspire, <br/>
+            With ardent pangs of strong desire. <br/>
+            <br/>
+            3 No more fatigue, no more distress, <br/>
+            Nor sin, nor hell, shall reach the place; <br/>
+            No groans to mingle with the songs <br/>
+            Which warble from immortal tongues. <br/>
+            <br/>
+            4 No rude alarms of raging foes, <br/>
+            No cares to break the long repose : <br/>
+            No midnight shade, no clouded sun, <br/>
+            But sacred, high, eternal noon. <br/>
+            <br/>
+            5 O long-expected day, begin ! <br/>
+            Dawn on these realms of woe and sin ; <br/>
+            Fain would we leave this weary road, <br/>
+            And sleep in death to rest with God. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(274)){
+	if (localStorage.getItem(274).toString() == '274'){
+		localStorage.setItem(274, '0');
+	}else{
+		localStorage.setItem(274, '274');
+	}
+}else{
+	localStorage.setItem(274, '274');
+}
+}
+
+if (localStorage.getItem(274).toString() == '274'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

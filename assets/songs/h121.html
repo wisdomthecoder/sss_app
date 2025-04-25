@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<div class="w3-container m1">
+  <p>1 On yonder hill of Calvary,<br/>
+            Where Jesus bled and died for me;<br/>
+            'Twas there from sin He set me free,<br/>
+            On Calvary, dark Calvary.
+
+    <div class="chorus"> 
+            On Cal - - vary, dark Calvary,<br/>
+            They nailed my Lord upon the tree—<br/>
+            And there He died in agony,<br/>
+            On Calvary, dark Calvary.</div>
+    
+            2 On yonder hill of Calvary,<br/>
+            Behold the world's great tragedy;<br/>
+            The sun that awful hour did flee<br/>
+            From Calvary, dark Calvary.<br/>
+            <br/>
+            3 On yonder hill of Calvary,<br/>
+            The sinner's only hope and plea,<br/>
+            Christ gave Himself for such as we-<br/>
+            On Calvary, dark Calvary.</p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(121)){
+	if (localStorage.getItem(121).toString() == '121'){
+		localStorage.setItem(121, '0');
+	}else{
+		localStorage.setItem(121, '121');
+	}
+}else{
+	localStorage.setItem(121, '121');
+}
+}
+
+if (localStorage.getItem(121).toString() == '121'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

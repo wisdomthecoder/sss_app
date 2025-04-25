@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Hark ! the herald angels sing,<br/>
+    Glory to the new-born King,<br/>
+    Peace on earth and mercy mild,<br/>
+    God and sinners reconciled ! <br/>
+    Joyful, all ye nations, rise,<br/>
+    Join the triumph of the skies ;<br/>
+    With th' angelic host proclaim,<br/>
+    Christ is born in Bethlehem.<br/>
+    Hark I the herald angels sing,<br/>
+    Glory to the new-born King.<br/>
+    <br/>
+    2 Christ, by highest heaven adored,<br/>
+    Christ, the everlasting Lord,<br/>
+    Late in time behold Him come,<br/>
+    Offspring of a virgin's womb ;<br/>
+    Veiled in flesh the Godhead see;<br/>
+    Hail th' Incarnate Deity,<br/>
+    Pleased as Man with men to dwell,<br/>
+    Jesus our Immanuel !<br/>
+    Hark ! the herald angels sing,<br/>
+    Glory to the new-born King.<br/>
+    <br/>
+    3 Hail,the heavenly Prince of Peace !<br/>
+    Hail, the Sun of Righteousness!<br/>
+    Light and life to all He brings,<br/>
+    Risen with healing in His wings;<br/>
+    Mild, He lays His glory by,<br/>
+    Born that man no more may die,<br/>
+    Born to raise the sons of earth,<br/>
+    Born to give them second birth.<br/>
+    Hark ! the herald angels sing,<br/>
+    Glory to the new-born King.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(30)){
+	if (localStorage.getItem(30).toString() == '30'){
+		localStorage.setItem(30, '0');
+	}else{
+		localStorage.setItem(30, '30');
+	}
+}else{
+	localStorage.setItem(30, '30');
+}
+}
+
+if (localStorage.getItem(30).toString() == '30'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

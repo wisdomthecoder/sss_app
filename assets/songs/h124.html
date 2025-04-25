@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Look up ! look up ! ye weary ones,<br/>
+            Whose skies are veiled in night;<br/>
+            For He who knows the path you tread<br/>
+            Will yet restore the light;<br/>
+            Look up ! and hail the dawning<br/>
+            Of hope's triumphant morning.
+
+    <div class="chorus"> 
+            Behold Him ! behold Him !<br/>
+            Your Saviour lives to-day;<br/>
+            Behold Him ! behold Him !<br/>
+            The clouds have rolled away.</div>
+    
+            2 The gifts you bring with loving hand<br/>
+            Your Lord will not disown;<br/>
+            Their odours sweet to heaven shall rise<br/>
+            Like incense round His throne;<br/>
+            Look up ! and hail the dawning<br/>
+            Of joy's transcendent morning.<br/>
+            <br/>
+            3 Rejoice ! the grave is overcome,<br/>
+            And lo ! the angels sing;<br/>
+            The grandest triumph ever known<br/>
+            Has come through Christ our King;<br/>
+            All heaven proclaims the dawning<br/>
+            Of love's all-glorious morning.</p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(124)){
+	if (localStorage.getItem(124).toString() == '124'){
+		localStorage.setItem(124, '0');
+	}else{
+		localStorage.setItem(124, '124');
+	}
+}else{
+	localStorage.setItem(124, '124');
+}
+}
+
+if (localStorage.getItem(124).toString() == '124'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

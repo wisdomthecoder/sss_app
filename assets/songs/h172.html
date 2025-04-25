@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 He is coming, the Man of Sorrows,<br/>
+            Now exalted on high;<br/>
+            He is coming with loud hosannas,<br/>
+            In the clouds of the sky.
+            
+            <div class="chorus">
+            Hallelujah ! Hallelujah !<br/>
+            He is coming again;<br/>
+            And with joy we will gather round Him,<br/>
+            At His coming to reign !
+          </div>
+          
+            2 He is coming, our loving Saviour,<br/>
+            Blessed Lamb that was slain !<br/>
+            In the glory of God the Father,<br/>
+            On the earth He shall reign.<br/>
+            <br/>
+            3 He is coming, our Lord and Master,<br/>
+            Our Redeemer and King;<br/>
+            We shall see Him in all His beauty,<br/>
+            And His praise we shall sing.<br/>
+            <br/>
+            4 He shall gather His chosen people,<br/>
+            Who are called by His name;<br/>
+            And the ransomed of every nation,<br/>
+            For His own He shall claim.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(172)){
+	if (localStorage.getItem(172).toString() == '172'){
+		localStorage.setItem(172, '0');
+	}else{
+		localStorage.setItem(172, '172');
+	}
+}else{
+	localStorage.setItem(172, '172');
+}
+}
+
+if (localStorage.getItem(172).toString() == '172'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

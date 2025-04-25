@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Jesus ! of Thee we ne'er would tire ; <br/>
+            The new and living food <br/>
+            Can satisfy our hearts' desire, <br/>
+            And life is in Thy blood. <br/>
+            <br/>
+            2 If such the happy midnight song <br/>
+            Our prisoned spirits raise, <br/>
+            What are the joys that cause ere long <br/>
+            Eternal bursts of praise ? <br/>
+            <br/>
+            3 To look within and see no stain, <br/>
+            Abroad no curse to trace ; <br/>
+            To shed no tears, to feel no pain, <br/>
+            But see Thee face to face. <br/>
+            <br/>
+            4 To find each hope of glory gained, <br/>
+            Fulfilled each precious word ; <br/>
+            And fully all to have attained <br/>
+            The image of our Lord. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(278)){
+	if (localStorage.getItem(278).toString() == '278'){
+		localStorage.setItem(278, '0');
+	}else{
+		localStorage.setItem(278, '278');
+	}
+}else{
+	localStorage.setItem(278, '278');
+}
+}
+
+if (localStorage.getItem(278).toString() == '278'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

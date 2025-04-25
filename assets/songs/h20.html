@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Come sing, my soul, and praise the
+    Lord,<br/>
+    Who hath redeemed thee by His blood;<br/>
+    Delivered thee from chains that bound,<br/>
+    And brought thee to redemption ground.
+
+    <div class="chorus">
+    Redemption ground, the ground of peace<br/>
+    Redemption ground, oh, wondrous grace<br/>
+    Here let our praise to God abound,<br/>
+    Who saves us on redemption ground !</div>
+
+    2 Once from my God I wandered far,<br/>
+    And with His holy will made war ;<br/>
+    But now my songs to God abound ;<br/>
+    I'm standing on redemption ground.<br/>
+    <br/>
+    3 Oh, joyous hour when God to me<br/>
+    A vision gave of Calvary; <br/>
+    My bonds were loosed,my soul un-bound :<br/>
+    I sang upon redemption ground.<br/>
+    <br/>
+    4 No works of merit now I plead,<br/>
+    But Jesus take for all my need ;<br/>
+    No righteousness in me is found,<br/>
+    Except upon redemption ground.<br/>
+    <br/>
+    5 Come, weary soul, and here find rest ;<br/>
+    Accept redemption,and be blest :<br/>
+    The Christ who died, by God is crowned<br/>
+    To pardon on redemption ground.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(20)){
+	if (localStorage.getItem(20).toString() == '20'){
+		localStorage.setItem(20, '0');
+	}else{
+		localStorage.setItem(20, '20');
+	}
+}else{
+	localStorage.setItem(20, '20');
+}
+}
+
+if (localStorage.getItem(20).toString() == '20'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>Look away to the cross of the  Cruci-fied One, <br/>
+            Where He purchased salvation for you;<br/>
+            When He laid down His life, and completed the work<br/>
+            That the Father had sent Him to do.
+
+    <div class="chorus"> 
+            Room at the cross, there is room at the cross,<br/>
+            And a welcome that all may receive;<br/>
+            There is room at the cross of the Crucified One,<br/>
+            And redemption for all who believe.</div>
+    
+            2 Look away to the cross of the Cruci-fied Oue, <br/>
+            To the Cross where He suffered and bled;<br/>
+            And to-day He invites you to come if you will, <br/>
+            And be cleansed in the blood that He shed.<br/>
+            <br/>
+            3 Look away to the cross of the Cruci-fied One, <br/>
+            Where the wine-press alone He hath trod;<br/>
+            Where He cried in His anguish,<br/>
+            is finished, 'tis done!<br/>
+            And commended His spirit to God.<br/>
+            <br/>
+            4 There is life at the cross of the Cruci-fied One,<br/>
+            And its hope is abiding and sure;<br/>
+            For the rapture that flows from the love He bestows<br/>
+            Shall for ever and ever endure.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(114)){
+	if (localStorage.getItem(114).toString() == '114'){
+		localStorage.setItem(114, '0');
+	}else{
+		localStorage.setItem(114, '114');
+	}
+}else{
+	localStorage.setItem(114, '114');
+}
+}
+
+if (localStorage.getItem(114).toString() == '114'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

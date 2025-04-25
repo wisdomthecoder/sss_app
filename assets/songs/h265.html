@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Now let my soul, eternal King, <br/>
+            To Thee its grateful tribute bring ; <br/>
+            My knee with humble homage bow, <br/>
+            My tongue perform its solemn vow. <br/>
+            <br/>
+            2 All nature sings Thy boundless love, <br/>
+            In worlds below and worlds above ; <br/>
+            But in Thy blessed Word I trace <br/>
+            Diviner wonders of Thy grace. <br/>
+            <br/>
+            3 Here Jesus bids my sorrows cease, <br/>
+            And gives my labouring conscience peace; <br/>
+            Here lifts my grateful passions high, <br/>
+            And points to mansions in the sky. <br/>
+            <br/>
+            4 For love like this, oh, let my song <br/>
+            Through endless years Thy praise <br/>
+            prolong ! <br/>
+            Let distant climes Thy name adore, <br/>
+            Till time and nature are no more. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(265)){
+	if (localStorage.getItem(265).toString() == '265'){
+		localStorage.setItem(265, '0');
+	}else{
+		localStorage.setItem(265, '265');
+	}
+}else{
+	localStorage.setItem(265, '265');
+}
+}
+
+if (localStorage.getItem(265).toString() == '265'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

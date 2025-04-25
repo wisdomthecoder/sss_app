@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Abide with me: fast falls the even-tide ;<br/>
+            The darkness deepens ; Lord, with me abide : <br/>
+            When other helpers fail, and comforts flee,  <br/>
+            Help of the helpless, oh, abide with me ! <br/>
+            <br/>
+            2 Swift to its close ebbs out life's little day ; <br/>
+            Earth's joys grow dim, its glories pass away ; <br/>
+            Change and decay in all around I see ; <br/>
+            O Thou, who changest not, abide <br/>
+            with me ! <br/>
+            <br/>
+            3 Come not in terrors, as the King of kings ; <br/>
+            But kind and good, with healing in Thy wings ;<br/>
+            Tears for all woes, a heart for every plea ;<br/>
+            Come, Friend of sinners, thus abide with me. <br/>
+            <br/>
+            4 I need Thy presence every passing hour ; <br/>
+            What but Thy grace can foil the tempter's power ?<br/>
+            Who like Thyself my guide and stay can be ?<br/>
+            Through cloud and sunshine, oh, abide with me ! <br/>
+            <br/>
+            5 I fear no foe, with Thee at hand to bless : <br/>
+            Ills have no weight, and tears no bitterness : <br/>
+            Where is death's sting ? where, grave, thy victory ? <br/>
+            I triumph still, if Thou abide with me.<br/>
+            <br/>
+            6 Be Thou Thyself before my closing eyes ;<br/>
+            Shine through the gloom, and point me to the skies ; <br/>
+            Heaven's morning breaks, and earth's vain shadows flee ;<br/>
+            In life, in death, O Lord, abide with me ! <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(297)){
+	if (localStorage.getItem(297).toString() == '297'){
+		localStorage.setItem(297, '0');
+	}else{
+		localStorage.setItem(297, '297');
+	}
+}else{
+	localStorage.setItem(297, '297');
+}
+}
+
+if (localStorage.getItem(297).toString() == '297'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

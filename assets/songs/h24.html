@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Hark ! what mean those holy voices<br/>
+    Sweetly sounding in the skies ?<br/>
+    Lo ! th' angelic host rejoices,<br/>
+    Loudest hallelujahs rise.<br/>
+    <br/>
+    2 Listen to the wondrous story<br/>
+    Which they chant in hymns of joy: <br/>
+    Glory in the highest, glory!<br/>
+    Glory' be to God most high.<br/>
+    <br/>
+    3 Peace on earth, good-will from heaven<br/>
+    Reaching far as man is found ;<br/>
+    Souls redeemed and sins forgiven,<br/>
+    Loud our golden harps shall sound.<br/>
+    <br/>
+    4 Christ is born ! the great Anointed !<br/>
+    Heaven and earth His glory sing;<br/>
+    Oh receive whom God appointed<br/>
+    For your Prophet,Priest, and King!<br/>
+    <br/>
+    5 Hasten, mortals, to adore Him,<br/>
+    Learn His name and taste His joy,<br/>
+    Till in heaven ye sing before Him <br/>
+    Glory be to God most high ! <br/>
+    <br/>
+    6 Let us learn the wondrous story<br/>
+    Of our great Redeemer's birth;<br/>
+    Spread the brightness of His glory,<br/>
+    Till it cover all the earth.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(24)){
+	if (localStorage.getItem(24).toString() == '24'){
+		localStorage.setItem(24, '0');
+	}else{
+		localStorage.setItem(24, '24');
+	}
+}else{
+	localStorage.setItem(24, '24');
+}
+}
+
+if (localStorage.getItem(24).toString() == '24'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

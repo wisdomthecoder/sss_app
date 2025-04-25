@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<div class="w3-container m1">
+  <p>1 The God of Abraham praise!<br/>
+    Who reigns enthroned above, <br/>
+    Ancient of everlasting days,<br/>
+    And God of love !<br/>
+    Jehovah,great I AM !<br/>
+    By earth and Heaven confest !<br/>
+    I bow, and bless the sacred name,<br/>
+    For ever blest !<br/>
+    <br/>
+    2 The God of Abraham praise !<br/>
+    At whose supreme command<br/>
+    From earth I rise, and seek the joys<br/>
+    At His right hand :<br/>
+    I all on earth forsake,<br/>
+    Its wisdom, fame, and power,<br/>
+    And Him my only portion make,<br/>
+    My Shield and Tower.<br/>
+    <br/>
+    3 The God of Abraham praise !<br/>
+    Whose all-sufficient grace<br/>
+    Shall guide me all my happy days<br/>
+    In all my ways :He calls a worm His friend !<br/>
+    He calls Himself my God !<br/>
+    And He shall save me to the end<br/>
+    Through Jesus' blood !<br/>
+    <br/>
+    4 He by Himself hath sworn,<br/>
+    I on His oath depend ;<br/>
+    I shall, on eagles' wings up borne,<br/>
+    To heaven ascend :<br/>
+    I shall behold His face,<br/>
+    I shall His power adore,<br/>
+    And sing the wonders of His grace<br/>
+    For evermore !<br/>
+    <br/>
+    5 The whole triumphant host<br/>
+    Give thanks to God on high:<br/>
+    Hail ! Father, Son, and Holy<br/>
+    They ever cry :  [Ghost !<br/>
+    Hail ! Abraham's God and mine !<br/>
+    I join the heavenly lays;<br/>
+    All might and majesty are Thine,<br/>
+    And endless praise!<br/></p>
+</div>
+
+<script>
+function mm1(){
+if (localStorage.getItem(4)){
+	if (localStorage.getItem(4).toString() == '4'){
+		localStorage.setItem(4, '0');
+	}else{
+		localStorage.setItem(4, '4');
+	}
+}else{
+	localStorage.setItem(4, '4');
+}
+}
+
+if (localStorage.getItem(4).toString() == '4'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

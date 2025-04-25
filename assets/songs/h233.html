@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 God is Love ! -----His Word pro-claims it, <br/>
+            Day by day the truth we prove ; <br/>
+            Heaven and earth with joy are telling. <br/>
+            Ever telling,  God is Love ! 
+            
+            <div class="chorus">
+            Hallelujah ! tell the story, <br/>
+            Sung by angel choirs above ; <br/>
+            Sounding forth the mighty chorus----<br/>
+            “God is Light, and God is Love !
+          </div>
+          
+            2  God is Love ! -----oh, tell it gladly, <br/>
+            How the Saviour from above <br/>
+            Came to seek and save the lost ones. <br/>
+            Showing thus the Father's love. <br/>
+            <br/>
+            3  God is Love ! ----oh, boundless mercy---- <br/>
+            May we all its fulness prove ! <br/>
+            Telling those who sit in darkness, <br/>
+            God is Light, and God is Love !<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(233)){
+	if (localStorage.getItem(233).toString() == '233'){
+		localStorage.setItem(233, '0');
+	}else{
+		localStorage.setItem(233, '233');
+	}
+}else{
+	localStorage.setItem(233, '233');
+}
+}
+
+if (localStorage.getItem(233).toString() == '233'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

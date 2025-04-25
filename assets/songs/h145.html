@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Would you be free from your burden of sin ?<br/>
+            There's power in the blood, power in the blood;<br/>
+            Would you o'er evil a victory win ?<br/>
+            There's wonderful power in the blood.
+
+    <div class="chorus"> 
+            There is power, . . . power, wonder-working power<br/>
+            In the blood ... of the Lamb ; . . . <br/>
+            There is power, . . . power, wonder-working power<br/>
+            In the precious blood of the Lamb. </div>
+    
+            2 Would you be free from your passion<br/>
+            and pride ? [in the blood;<br/>
+            There's power in the blood, power<br/>
+            Come for a cleansing to Calvary's tide, <br/>
+            There's wonderful power in the blood.<br/>
+            <br/>
+            3Would you be whiter, much whiter<br/>
+            than snow ? [in the blood;<br/>
+            There's power in the blood, power<br/>
+            Sin-stains are lost in its life-giving flow, <br/>
+            There's wonderful power in the blood.<br/>
+            <br/>
+            4 Would you do service for Jesus your King ? <br/>
+            There's power in the blood, power in the blood;<br/>
+            Would you live daily His praises to sing ? <br/>
+            There's wonderful power in the blood.</p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(145)){
+	if (localStorage.getItem(145).toString() == '145'){
+		localStorage.setItem(145, '0');
+	}else{
+		localStorage.setItem(145, '145');
+	}
+}else{
+	localStorage.setItem(145, '145');
+}
+}
+
+if (localStorage.getItem(145).toString() == '145'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

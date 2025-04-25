@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 I love to tell the Story<br/>
+    Of unseen things above<br/>
+    Of Jesus and His glory,<br/>
+    Of Jesus and His love.<br/>
+    I love to tell the Story,<br/>
+    Because I know it's true ;<br/>
+    It satisfies my longings<br/>
+    As nothing else can do.
+    <div class="chorus">
+    I love to tell the Story !<br/>
+    'Twill be my theme in glory,<br/>
+    To tell the Old, Old Story,<br/>
+    Of jesus and His love.
+    <div>
+    2 I love to tell the Story:<br/>
+    More wonderful it seems<br/>
+    Than all the golden fancies<br/>
+    Of all our golden dreams.<br/>
+    I love to tell the Story:<br/>
+    It did so much for me ;<br/>
+    And that is just the reason<br/>
+    I tell it now to thee.<br/>
+    <br/>
+    3 I love to tell the Story:<br/>
+    Tis pleasant to repeat<br/>
+    What seems, each time I tell it,<br/>
+    More wonderfully sweet.<br/>
+    I love to tell the Story:<br/>
+    For some have never heard<br/>
+    The message of salvation<br/>
+    From God's own Holy Word.<br/>
+    <br/>
+    4 I love to tell the Story:<br/>
+    For those who know it best<br/>
+    Seem hungering and thirsting<br/>
+    To hear it like the rest.<br/>
+    And when, in scenes of glory,<br/>
+    I sing the New, New Song,<br/>
+    'Twill be the Old, Old Story<br/>
+    That I have loved so long.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(46)){
+	if (localStorage.getItem(46).toString() == '46'){
+		localStorage.setItem(46, '0');
+	}else{
+		localStorage.setItem(46, '46');
+	}
+}else{
+	localStorage.setItem(46, '46');
+}
+}
+
+if (localStorage.getItem(46).toString() == '46'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

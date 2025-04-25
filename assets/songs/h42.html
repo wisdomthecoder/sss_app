@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 There is no love like the love of Jesus,<br/>
+    Never to fade or fall,<br/>
+    Till into the fold of the peace of God<br/>
+    He has gathered us all.
+    
+    <div class="chorus">
+    Jesus' love, precious love,<br/>
+    Boundless and pure and free ;<br/>
+    Oh, turn to that love, weary wandering soul,<br/>
+    Jesus pleadeth for thee.</div>
+
+    2 There is no heart like the heart of Jesus,<br/>
+    Filled with a tender love;<br/>
+    No throb nor throe that our hearts can know,<br/>
+    But He feels it above, <br/>
+    <br/>
+    3 Oh, let us hark to the voice of Jesus !<br/>
+    Oh, may we never roam,<br/>
+    Till safe we rest on His loving breast<br/>
+    In the dear heavenly home.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(42)){
+	if (localStorage.getItem(42).toString() == '42'){
+		localStorage.setItem(42, '0');
+	}else{
+		localStorage.setItem(42, '42');
+	}
+}else{
+	localStorage.setItem(42, '42');
+}
+}
+
+if (localStorage.getItem(42).toString() == '42'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

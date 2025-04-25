@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Thou didst leave Thy throne and Thy<br />
+    kingly crown,<br />
+    When Thou earnest to earth for me ;<br />
+    But in Bethlehem's home was there<br />
+    found no roomFor Thy holy nativity :
+
+  <div class="chorus">
+    Oh, come to my heart, Lord Jesus !<br />
+    There is room in my heart for Thee ;
+  </div>
+
+
+  2 Heaven's arches rang when the angels sang,<br />
+  ProclaimingThy royal degree;<br />
+  But of lowly birth cam'st Thou, Lord, on earth,<br />
+  And in great humility :<br />
+  <br />
+  3 The foxes found rest,and the birds<br />
+  had their nest<br />
+  In the shade of the forest tree ;<br />
+  But Thy couch was the sod, O Thou<br />
+  Son of God,<br />
+  In the deserts of Galilee :<br />
+  <br />
+
+
+  4 Thou camest, O Lord, with the living Word<br />
+  That should set Thy people free ;<br />
+  But with mocking scorn, and with crown of thorn,<br />
+  They bore Thee to Calvary:<br />
+
+  <br />
+  5 When heaven's arches shall ring, and<br />
+  her choirs shall sing<br />
+  At Thy coming to victory ;<br />
+  Let Thy voice call me home, saying, <br />
+  Yet there is room,<br />
+  There is room at My side for thee !<br />
+  And my heart shall rejoice, Lord Jesus !<br />
+  When Thou comest and callest for me.<br />
+  His Life and Love<br /></p>
+</div>
+<script>
+  function mm1() {
+    if (localStorage.getItem(35)) {
+      if (localStorage.getItem(35).toString() == '35') {
+        localStorage.setItem(35, '0');
+      } else {
+        localStorage.setItem(35, '35');
+      }
+    } else {
+      localStorage.setItem(35, '35');
+    }
+  }
+
+  if (localStorage.getItem(35).toString() == '35') {
+    document.getElementById("btns").style.color = "blue";
+    document.getElementById("image").src = "stars1.png";
+  } else {
+    document.getElementById("btns").style.color = "white";
+    document.getElementById("image").src = "stars.png";
+  }
+  function bbbb() {
+    if (document.getElementById("btns").style.color == "blue") { document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png"; }
+    else { document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png"; }
+  }
+</script>
+<script src="hscript.js"></script>
+</body>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<div class="w3-container m1">
+  <p>1 Come near me, O my Saviour !<br/>
+    Thy tenderness reveal ;<br/>
+    Oh, let me know the sympathy<br/>
+    Which Thou for me dost feel !<br/>
+    need Thee every moment ;<br/>
+    Thine absence brings dismay ;<br/>
+    But when the tempter hurls his darts,<br/>
+    'Twere death with Thee away !<br/>
+    <br/>
+    2 Come near me, my Redeemer,<br/>
+    And never leave my side !<br/>
+    My bark, when tossed on trouble's sea<br/>
+    The storm cannot outride,<br/>
+    Unless Thy word of power quell ;<br/>
+    Arrest the surging wave,<br/>
+    No voice but Thine its rage can<br/>
+    No arm but Thine can save !<br/>
+    <br/>
+    3 Come near me, blessed Jesus !<br/>
+    I need Thee in my joy.<br/>
+    No less than when the direst ills<br/>
+    My happiness destroy;<br/>
+    For when the sun shines o'er me,<br/>
+    And flowers strew my way,<br/>
+    Without Thy wise and guiding hand,<br/>
+    More easily I stray.<br/>
+    <br/>
+    4 Be near me, mighty Saviour,<br/>
+    When comes the latest strife!<br/>
+    For Thou hast through death's<br/>
+    shadows passed,<br/>
+    And ope'd the gates of life;<br/>
+    And when among the ransomed<br/>
+    I stand with crown and palm,<br/>
+    To Thee, Divine,unfailing Friend,<br/>
+    I'll raise th' eternal psalm !<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(52)){
+	if (localStorage.getItem(52).toString() == '52'){
+		localStorage.setItem(52, '0');
+	}else{
+		localStorage.setItem(52, '52');
+	}
+}else{
+	localStorage.setItem(52, '52');
+}
+}
+
+if (localStorage.getItem(52).toString() == '52'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

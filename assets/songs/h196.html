@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Come, Holy Ghost, in love, <br/>
+            Shed on us from above <br/>
+            Thine own bright ray : <br/>
+            Divinely good Thou art ; <br/>
+            Thy sacred gifts impart <br/>
+            To gladden each sad heart : <br/>
+            Oh, come to-day ! <br/>
+            <br/>
+            2 Come, tenderest Friend and best, <br/>
+            Our most delightful Guest, <br/>
+            With soothing power : <br/>
+            Rest, which the weary know ; <br/>
+            Shade, 'mid the noontide glow; <br/>
+            Peace, when deep griefs o'erflow : <br/>
+            Cheer us this hour. <br/>
+            <br/>
+            3 Come, Light serene and still, <br/>
+            Our inmost bosoms fill ; <br/>
+            <br/>
+            Dwell in each breast ! <br/>
+            We know no dawn but Thine ; <br/>
+            Send forth Thy beams divine. <br/>
+            On our dark souls to shine, <br/>
+            And make us blest. <br/>
+            <br/>
+            4 Exalt our low desires, <br/>
+            Extinguish passion's fires, <br/>
+            Heal every wound ; <br/>
+            Our stubborn spirits bend, <br/>
+            Our icy coldness end, <br/>
+            Our devious steps attend <br/>
+            While heavenward bound. <br/>
+            <br/>
+            5 Come, all the faithful bless : <br/>
+            Let all who Christ confess <br/>
+            His praise employ ; <br/>
+            Give virtue's rich reward ; <br/>
+            Victorious death accord, <br/>
+            And, with our glorious Lord, <br/>
+            Eternal joy. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(196)){
+	if (localStorage.getItem(196).toString() == '196'){
+		localStorage.setItem(196, '0');
+	}else{
+		localStorage.setItem(196, '196');
+	}
+}else{
+	localStorage.setItem(196, '196');
+}
+}
+
+if (localStorage.getItem(196).toString() == '196'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

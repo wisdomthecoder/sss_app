@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<!-- <body onbeforeunload="interz();">
+<div class="w3-bar w3-red w3-top pb">
+<button class="w3-bar-item w3-btn" onclick="javascript:stopPlayerz(); goBack();"><img src="pre.png"></button>
+  <div class="w3-bar-item  w3-display-middle"><h5>3</h5></div>
+  <button class="w3-bar-item w3-btn w3-display-right" onclick="javascript:shareitz();"><img src="share.png"></button>
+  <button id= "btns" class="w3-bar-item w3-btn" onclick="mm1(); bbbb();"><img id= "image" src="stars.png"></button>
+</div>
+    <div class="fixing">
+	        <div class="players">
+			 <button class="w3-button w3-teal w3-tiny" onclick="javascript:playz('a0003')">Play</button>
+			<button class="w3-button w3-red w3-tiny" onclick="javascript:stopPlayerz()">stop</button>&nbsp;&nbsp;
+			<div class="w3-show-inline-block">
+			<button class="w3-btn w3-black w3-round-large end w3-small"><img src="equalizers.gif"></button>
+			<button class="w3-btn w3-black w3-round-large start w3-small"><img src="equalizer.gif"></button>
+        </div>
+		</div>
+    </div> -->
+<div class="w3-container m1">
+  <p>1 A safe stronghold our God is still,<br/>
+      A trusty shield and weapon ;<br/>
+      He'll help us clear from all the ill<br/>
+      That hath us now o'er taken.<br/>
+      The ancient prince of hell<br/>
+      Hath risen with purpose fell ;<br/>
+      Strong mail of craft and power<br/>
+      He weareth in this hour,<br/>
+      On earth is not his fellow.<br/>
+      <br/>
+      2 With force of arms we nothing can,<br/>
+      Full soon were we down-ridden ;<br/>
+      But for us fights the proper Man,<br/>
+      Whom God Himself hath bidden.<br/>
+      Ask ye, Who is this same ?<br/>
+      Christ Jesus is His name,<br/>
+      The Lord Sabaoth's Son ;<br/>
+      He, and no other one,<br/>
+      Shall conquer in the battle.<br/>
+      <br/>
+      3 And were this world all devils o'er,<br/>
+      And watching to devour us,<br/>
+      We lay it not to heart so sore ;<br/>
+      Not they can overpower us.<br/>
+      And let the prince of ill<br/>
+      Look grim as e'er he will,<br/>
+      He harms us not a whit :<br/>
+      For why ? His doom is writ ;<br/>
+      A word shall quickly slay him.<br/>
+      <br/>
+      4 God's word, for all their craft and force,<br/>
+      One moment will not linger,<br/>
+      But,spite of hell, shall have its course;<br/>
+      'Tis written by His finger.<br/>
+      And though they take our life,<br/>
+      Goods, honour, children, wife,<br/>
+      Yet is their profit small ;<br/>
+      These things shall vanish all,<br/>
+      The city of God remaineth.<br/></p>
+</div>
+
+<script>
+function mm1(){
+if (localStorage.getItem(3)){
+	if (localStorage.getItem(3).toString() == '3'){
+		localStorage.setItem(3, '0');
+	}else{
+		localStorage.setItem(3, '3');
+	}
+}else{
+	localStorage.setItem(3, '3');
+}
+}
+
+
+if (localStorage.getItem(3).toString() == '3'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

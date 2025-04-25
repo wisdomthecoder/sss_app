@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<div class="w3-container m1">
+  <p>1 Holy, Holy, Holy ! Lord God Almighty !<br/>
+    Early in the morning our song shall rise to Thee ;<br/>
+    Holy, Holy, Holy ! Merciful andMighty !<br/>
+    God in Three Persons,blessed Trinity !<br/>
+    <br/>
+    2 Holy, Holy, Holy ! all the saints adore Thee,<br/>
+    Casting down their golden crowns around the glassy sea ;<br/>
+    Cherubim and Seraphim falling down before Thee, <br/>
+    Which wert, and art, and evermore shall be.<br/>
+    <br/>
+    3 Holy, Holy, Holy ! though the darkness hide Thee,<br/>
+    Though the eye of sinful man<br/>
+    Thy glory may not see : <br/>
+    Only Thou art holy, there is none beside Thee,<br/>
+    Perfect in power, in love, and purity.<br/>
+    <br/>
+    4 Holy, Holy, Holy ! Lord God Almighty !<br/>
+    All Thy works shall praise <br/>
+    Thy name in earth, and sky,and sea ;<br/>
+    Holy, Holy, Holy ! Merciful and Mighty !<br/>
+    God in Three Persons, blessed Trinity!<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(22)){
+	if (localStorage.getItem(22).toString() == '22'){
+		localStorage.setItem(22, '0');
+	}else{
+		localStorage.setItem(22, '22');
+	}
+}else{
+	localStorage.setItem(22, '22');
+}
+}
+
+if (localStorage.getItem(22).toString() == '22'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

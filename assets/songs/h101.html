@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container" >
+  <p>1 The Lord is our Strength and Redeemer,<br/>
+            The Rock where in safety we hide;<br/>
+            He feedeth His flock like a Shepherd,<br/>
+            His love shall forever abide.
+
+    <div class="chorus"> 
+            By cool flowing<br/>
+            waters He leads them,<br/>
+            Where pastures are blooming and fair . .<br/>
+            He gathers the lambs in His bosom,<br/>
+            And carries them tenderly there; . . .<br/>
+            He gathers the lambs in His bosom,<br/>
+            And carries them tenderly there. . . .</div>
+    
+            2 The Lord is our Shield and Defender,<br/>
+            His eye never slumbers nor sleeps:<br/>
+            He feedeth His flock like a Shepherd,<br/>
+            Their footsteps from wandering He keeps.<br/>
+            <br/>
+            3 The Lord is our Hope and Salvation,<br/>
+            Oh, glory and praise to His name !<br/>
+            He feedeth His flock like a Shepherd—<br/>
+            The weakest His blessings may claim.<br/></p>
+	
+
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(101)){
+	if (localStorage.getItem(101).toString() == '101'){
+		localStorage.setItem(101, '0');
+	}else{
+		localStorage.setItem(101, '101');
+	}
+}else{
+	localStorage.setItem(101, '101');
+}
+}
+
+if (localStorage.getItem(101).toString() == '101'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<div class="w3-container m1">
+  <p>1 There is a fountain filled with blood,<br/>
+            Drawn from Immanuel's veins,<br/>
+            And sinners plunged beneath that flood<br/>
+            Lose all their guilty stains, <br/>
+            <br/>
+            2 The dying thief rejoiced to see<br/>
+            That fountain in his day;<br/>
+            And there may I, though vile as he,<br/>
+            Wash all my sins away.<br/>
+            <br/>
+            3 E'er since by faith I saw the stream<br/>
+            Thy flowing wounds supply,<br/>
+            Redeeming love has been my theme,<br/>
+            And shall be till I die.<br/>
+            in praise every<br/>
+            <br/>
+            4 Then in a nobler, sweeter song<br/>
+            I'll sing Thy power to save,<br/>
+            When this poor lisping, stammering tongue<br/>
+            Lies silent in the grave.</p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(129)){
+	if (localStorage.getItem(129).toString() == '129'){
+		localStorage.setItem(129, '0');
+	}else{
+		localStorage.setItem(129, '129');
+	}
+}else{
+	localStorage.setItem(129, '129');
+}
+}
+
+if (localStorage.getItem(129).toString() == '129'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

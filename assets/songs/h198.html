@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Oh, spread the tidings round, wherever man is found. <br/>
+            Wherever human hearts and human woes abound; <br/>
+            Let every Christian tongue proclaim the joyful sound: <br/>
+            The Comforter has come! 
+            
+            <div class="chorus">
+            The Comforter has come, the Comforter <br/>
+            has come I<br/>
+            The Holy Ghost from heaven, the Father's promise given; <br/>
+            Oh, spread the tidings round, wherever man is found: <br/>
+            The Comforter has come! 
+          </div>
+          
+            2 The long, long night is past, the <br/>
+            morning breaks at last; <br/>
+            And hushed the dreadful wail and <br/>
+            fury of the blast,<br/>
+            As o'er the golden hills the day advances fast: <br/>
+            The Comforter has come! <br/>
+            <br/>
+            3 The mighty King of kings, with healing in His wings, <br/>
+            To every captive soul a full deliverance brings ; <br/>
+            And through the vacant cells the song <br/>
+            of triumph rings : <br/>
+            The Comforter has come ! <br/>
+            <br/>
+            4 Oh, boundless love divine ! how shall <br/>
+            this tongue of mine <br/>
+            To wondering mortals tell the match- <br/>
+            less grace divine ----- <br/>
+            That I may with Him dwell, and in <br/>
+            His image shine ! -----<br/>
+            The Comforter has come I <br/>
+            <br/>
+            5 Oh, let the echoes fly above the vaulted sky,<br/>
+            And all the saints above to all below reply <br/>
+            In strains of endless love, the song <br/>
+            that ne'er will die : <br/>
+            The Comforter has come ! <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(198)){
+	if (localStorage.getItem(198).toString() == '198'){
+		localStorage.setItem(198, '0');
+	}else{
+		localStorage.setItem(198, '198');
+	}
+}else{
+	localStorage.setItem(198, '198');
+}
+}
+
+if (localStorage.getItem(198).toString() == '198'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

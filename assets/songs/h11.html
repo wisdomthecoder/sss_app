@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+<!-- 
+<body onbeforeunload="interz();">
+<div class="w3-bar w3-red w3-top pb">
+<button class="w3-bar-item w3-btn" onclick="javascript:stopPlayerz(); goBack();"><img src="pre.png"></button>
+  <div class="w3-bar-item  w3-display-middle"><h5>11</h5></div>
+  <button class="w3-bar-item w3-btn w3-display-right" onclick="javascript:shareitz();"><img src="share.png"></button>
+    <button id= "btns" class="w3-bar-item w3-btn" onclick="mm1(); bbbb();"><img id= "image" src="stars.png"></button>
+</div>
+    <div class="fixing">
+	        <div class="players">
+			 <button class="w3-button w3-teal w3-tiny" onclick="javascript:playz('a0011')">Play</button>
+			<button class="w3-button w3-red w3-tiny" onclick="javascript:stopPlayerz()">stop</button>&nbsp;&nbsp;
+			<div class="w3-show-inline-block">
+			<button class="w3-btn w3-black w3-round-large end w3-small"><img src="equalizers.gif"></button>
+			<button class="w3-btn w3-black w3-round-large start w3-small"><img src="equalizer.gif"></button>
+        </div>
+		</div>
+    </div> -->
+<div class="w3-container m1">
+  <p>1 Oh, worship the King,<br/>
+    All glorious above !<br/>
+    Oh, gratefully sing<br/>
+    His power and His love;<br/>
+    Our Shield and Defender,<br/>
+    The Ancient of Days,<br/>
+    Pavilioned in splendour,<br/>
+    And girded with praise.<br/>
+    <br/>
+    2 Oh, tell of His might,<br/>
+    Oh, sing of His grace !<br/>
+    Whose robe is the light,<br/>
+    Whose canopy space ;<br/>
+    His chariots of wrath<br/>
+    The deep thunder-clouds form,<br/>
+    And dark is His path<br/>
+    On the wings of the storm.<br/>
+    <br/>
+    3 The earth with its store<br/>
+    Of wonders untold,<br/>
+    Almighty ! Thy power<br/>
+    Hath founded of old :<br/>
+    Hath 'stablished it fast<br/>
+    By a changeless decree ;<br/>
+    And round it hath cast,<br/>
+    Like a mantle,the sea.<br/>
+    <br/>
+    4 Thy bountiful care,<br/>
+    What tongue can recite ?<br/>
+    It breathes in the air,<br/>
+    It shines in the light ;<br/>
+    It streams from the hills,<br/>
+    It descends to the plain,<br/>
+    And sweetly distils in<br/>
+    The dew and the rain.<br/>
+    <br/>
+    5 Frail children of dust,<br/>
+    And feeble as frail <br/>
+    In Thee do we trust,<br/>
+    Nor find Thee to fail :<br/>
+    Thy mercies how tender,<br/>
+    How firm to the end !<br/>
+    Our Maker, Defender,<br/>
+    Redeemer, and Friend !<br/>
+    <br/>
+    6 O measureless Might !<br/>
+    Ineffable Love !<br/>
+    While angels delight<br/>
+    To hymn Thee above,<br/>
+    The humbler creation,<br/>
+    Though feeble their lays,<br/>
+    With true adoration<br/>
+    Shall sing to Thy praise.<br/></p>
+</div>
+
+<script>
+function mm1(){
+if (localStorage.getItem(11)){
+	if (localStorage.getItem(11).toString() == '11'){
+		localStorage.setItem(11, '0');
+	}else{
+		localStorage.setItem(11, '11');
+	}
+}else{
+	localStorage.setItem(11, '11');
+}
+}
+
+if (localStorage.getItem(11).toString() == '11'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<!-- <body onbeforeunload="interz();">
+<div class="w3-bar w3-red w3-top pb">
+<button class="w3-bar-item w3-btn" onclick="javascript:stopPlayerz(); goBack();"><img src="pre.png"></button>
+  <div class="w3-bar-item  w3-display-middle"><h5>13</h5></div>
+  <button class="w3-bar-item w3-btn w3-display-right" onclick="javascript:shareitz();"><img src="share.png"></button>
+    <button id= "btns" class="w3-bar-item w3-btn" onclick="mm1(); bbbb();"><img id= "image" src="stars.png"></button>
+</div>
+    <div class="fixing">
+	        <div class="players">
+			 <button class="w3-button w3-teal w3-tiny" onclick="javascript:playz('a0013')">Play</button>
+			<button class="w3-button w3-red w3-tiny" onclick="javascript:stopPlayerz()">stop</button>&nbsp;&nbsp;
+			<div class="w3-show-inline-block">
+			<button class="w3-btn w3-black w3-round-large end w3-small"><img src="equalizers.gif"></button>
+			<button class="w3-btn w3-black w3-round-large start w3-small"><img src="equalizer.gif"></button>
+        </div>
+		</div>
+    </div> -->
+<div class="w3-container m1">
+  <p>1 Though troubles assail,<br/>
+    And dangers affright;<br/>
+    Though friends should all fail,<br/>
+    And foes all unite<br/>
+    Yet one thing secures us,<br/>
+    Whatever betide :<br/>
+    The Scripture assures us, <br/>
+    The Lord will provide.<br/>
+    <br/>
+    2 The birds, without barn<br/>
+    Or storehouse, are fed ;<br/>
+    From them let us learn<br/>
+    To trust for our bread :<br/>
+    His saints what is fitting<br/>
+    Shall ne'er be denied,<br/>
+    So long as 'tis written, <br/>
+    The Lord will provide.<br/>
+    <br/>
+    3 His call we obey.<br/>
+    Like Abram of old,<br/>
+    Not knowing our way ;<br/>
+    But faith makes us bold :<br/>
+    For though we are strangers,<br/>
+    We have a good Guide ;<br/>
+    And trust in ail dangers: <br/>
+    The Lord will provide.<br/>
+    <br/>
+    4 No strength of our own,<br/>
+    Or goodness we claim ;<br/>
+    Yet since we have known<br/>
+    The Saviour's great name,<br/>
+    In this our strong tower<br/>
+    For safety we hide,<br/>
+    AlmightyHis power: <br/>
+    The Lord will provide.'<br/></p>
+</div>
+
+<script>
+function mm1(){
+if (localStorage.getItem(13)){
+	if (localStorage.getItem(13).toString() == '13'){
+		localStorage.setItem(13, '0');
+	}else{
+		localStorage.setItem(13, '13');
+	}
+}else{
+	localStorage.setItem(13, '13');
+}
+}
+
+if (localStorage.getItem(13).toString() == '13'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

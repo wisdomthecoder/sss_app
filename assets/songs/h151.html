@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Behold the Saviour of mankind<br/>
+            Nailed to the shameful tree;<br/>
+            How vast the love that Him inclined<br/>
+            To bleed and die for thee !<br/>
+            <br/>
+            2 Hark, how He groans, while nature shakes,<br/>
+            And earth's strong pillars bend;<br/>
+            The temple's vail in sunder breaks,<br/>
+            The solid marbles rend.<br/>
+            <br/>
+            3 ‘Tis done ! the precious ransom's paid;<br/>
+            Receive My soul ! He cries;<br/>
+            See where He bows His sacred head—<br/>
+            He bows His head and dies.<br/>
+            <br/>
+            4 But soon He'll break death's envious chain,<br/>
+            And in full glory shine : <br/>
+            O Lamb of God, was ever pain,<br/>
+            Was ever love, like Thine ?</p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(151)){
+	if (localStorage.getItem(151).toString() == '151'){
+		localStorage.setItem(151, '0');
+	}else{
+		localStorage.setItem(151, '151');
+	}
+}else{
+	localStorage.setItem(151, '151');
+}
+}
+
+if (localStorage.getItem(151).toString() == '151'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

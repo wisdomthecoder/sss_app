@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 The Lord bless thee, and keep thee : <br/>
+            The Lord make His face shine upon thee,<br/>
+            And be gracious unto thee, <br/>
+            And be gracious unto thee : <br/>
+            The Lord lift up His countenance, <br/>
+            His countenance upon thee, <br/>
+            And give thee peace. . . . <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(295)){
+	if (localStorage.getItem(295).toString() == '295'){
+		localStorage.setItem(295, '0');
+	}else{
+		localStorage.setItem(295, '295');
+	}
+}else{
+	localStorage.setItem(295, '295');
+}
+}
+
+if (localStorage.getItem(295).toString() == '295'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

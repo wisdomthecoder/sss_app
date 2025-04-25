@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 The head that once was crowned with thorns<br/>
+            Is crowned with glory now:<br/>
+            A royal diadem adorns<br/>
+            The mighty Victor's brow.<br/>
+            <br/>
+            2 The highest place that heaven affords<br/>
+            Is His by sovereign right:<br/>
+            The King of kings, and Lord of lords,<br/>
+            He reigns in perfect light.<br/>
+            <br/>
+            3 The joy of all who dwell above,<br/>
+            The joy of all below,<br/>
+            To whom He manifests His love,<br/>
+            And grants His name to know.<br/>
+            <br/>
+            4 To them the cross, with all its shame,<br/>
+            With all its grace, is given:<br/>
+            Their name, an everlasting name;<br/>
+            Their joy, the joy of heaven.<br/>
+            <br/>
+            5 They suffer with their Lord below,<br/>
+            They reign with Him above;<br/>
+            Their profit and their bliss to know<br/>
+            The fulness of His love.<br/>
+            <br/>
+            6 His cross to them is life and health,<br/>
+            Though it was death to Him;<br/>
+            Their present hope, and joy, and wealth,<br/>
+            And their eternal theme, <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(141)){
+	if (localStorage.getItem(141).toString() == '141'){
+		localStorage.setItem(141, '0');
+	}else{
+		localStorage.setItem(141, '141');
+	}
+}else{
+	localStorage.setItem(141, '141');
+}
+}
+
+if (localStorage.getItem(141).toString() == '141'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Not all the blood of beasts<br/>
+            On Jewish altars slain,<br/>
+            Could give the guilty conscience peace,<br/>
+            Or wash away the stain.<br/>
+            <br/>
+            2 But Christ, the heavenly Lamb,<br/>
+            Takes all our sins away;<br/>
+            A sacrifice of nobler name,<br/>
+            And richer blood than they.<br/>
+            <br/>
+            3 My faith would lay her hand<br/>
+            On that dear head of Thine,<br/>
+            While like a penitent I stand,<br/>
+            And there confess my sin.<br/>
+            <br/>
+            4 My soul looks back to see<br/>
+            The burden Thou didst bear<br/>
+            When hanging on th' accursed tree,<br/>
+            And knows her guilt was there.</p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(117)){
+	if (localStorage.getItem(117).toString() == '117'){
+		localStorage.setItem(117, '0');
+	}else{
+		localStorage.setItem(117, '117');
+	}
+}else{
+	localStorage.setItem(117, '117');
+}
+}
+
+if (localStorage.getItem(117).toString() == '117'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

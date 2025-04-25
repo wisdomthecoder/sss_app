@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+
+<div class="w3-container m1">
+  <p>1 The dawn of God's dear Sabbath <br/>
+            Breaks o'er the earth again. <br/>
+            As some sweet summer morning <br/>
+            After a night of pain : <br/>
+            It comes as cooling showers <br/>
+            To some exhausted land, <br/>
+            As shade of clustered palm trees <br/>
+            'Mid weary wastes of sand. <br/>
+            <br/>
+            2 O day, when earthly sorrow <br/>
+            Is merged in heavenly joy, <br/>
+            And trial changed to blessing <br/>
+            That foes may not destroy ; <br/>
+            When want is turned to fulness, <br/>
+            And weariness to rest ; <br/>
+            And pain to wondrous rapture, <br/>
+            Upon the Saviour's breast. <br/>
+            <br/>
+            3 Lord, we would bring for offering, <br/>
+            Though marred with earthly soil, <br/>
+            A week of earnest labour, <br/>
+            Of steady, faithful toil ; <br/>
+            Fair fruits of self-denial, <br/>
+            Of strong, deep love to Thee, <br/>
+            Fostered by Thine own Spirit <br/>
+            In our humility. <br/>
+            <br/>
+            4 And we would bring our burden <br/>
+            Of sinful thought and deed, <br/>
+            In Thy pure presence kneeling, <br/>
+            From bondage to be freed ; <br/>
+            Our hearts' most bitter sorrow <br/>
+            For all Thy work undone,------ <br/>
+            So many talents wasted, <br/>
+            So few bright laurels won ! <br/>
+            <br/>
+            5 So be it, Lord, for ever : <br/>
+            Oh, may we evermore, <br/>
+            In Jesus' holy presence, <br/>
+            His blessed name adore : <br/>
+            Upon His peaceful Sabbath, <br/>
+            Within His temple walls, <br/>
+            Type of the stainless worship <br/>
+            In Zion's golden halls ; <br/>
+            <br/>
+            6 So that in joy and gladness <br/>
+            We reach that home at last ; <br/>
+            When life's short week of sorrow, <br/>
+            And sin, and strife is past ; <br/>
+            When angel-hands have gathered <br/>
+            The fair ripe fruit for Thee, <br/>
+            O Father, Lord, Redeemer, <br/>
+            Most Holy Trinity. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(273)){
+	if (localStorage.getItem(273).toString() == '273'){
+		localStorage.setItem(273, '0');
+	}else{
+		localStorage.setItem(273, '273');
+	}
+}else{
+	localStorage.setItem(273, '273');
+}
+}
+
+if (localStorage.getItem(273).toString() == '273'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

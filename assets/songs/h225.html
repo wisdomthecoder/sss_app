@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Oh, sing of my Redeemer, <br/>
+            My Saviour, Lord, and King; <br/>
+            A song of praise and glory <br/>
+            Let all with rapture sing.
+            
+            <div class="chorus">
+            Oh, sing ... of my Redeemer, . . . <br/>
+            Who gave . . . Himself for me ; <br/>
+            Upon . . . the cross He suffered, . <br/>
+            From sin ... to set me free. . .
+          </div>
+          
+            2 Oh, sing of my Redeemer, <br/>
+            And spread abroad His name; <br/>
+            His mercy, free and boundless, <br/>
+            Let heaven and earth proclaim. <br/>
+            <br/>
+            3 Oh, sing of my Redeemer ! <br/>
+            His praise my theme shall be ; <br/>
+            He took my sins upon Him, <br/>
+            And bore them on the tree. <br/>
+            <br/>
+            4 Oh, sing of my Redeemer ! <br/>
+            On Him alone I call ; <br/>
+            My everlasting portion, <br/>
+            My Hope, my Life, my All.</p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(225)){
+	if (localStorage.getItem(225).toString() == '225'){
+		localStorage.setItem(225, '0');
+	}else{
+		localStorage.setItem(225, '225');
+	}
+}else{
+	localStorage.setItem(225, '225');
+}
+}
+
+if (localStorage.getItem(225).toString() == '225'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>

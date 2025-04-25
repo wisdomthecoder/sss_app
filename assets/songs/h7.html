@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+<!-- 
+<body onbeforeunload="interz();">
+<div class="w3-bar w3-red w3-top pb">
+<button class="w3-bar-item w3-btn" onclick="javascript:stopPlayerz(); goBack();"><img src="pre.png"></button>
+  <div class="w3-bar-item  w3-display-middle"><h5>7</h5></div>
+  <button class="w3-bar-item w3-btn w3-display-right" onclick="javascript:shareitz();"><img src="share.png"></button>
+  <button id= "btns" class="w3-bar-item w3-btn" onclick="mm1(); bbbb();"><img id= "image" src="stars.png"></button>
+</div>
+    <div class="fixing">
+	        <div class="players">
+			 <button class="w3-button w3-teal w3-tiny" onclick="javascript:playz('a0007')">Play</button>
+			<button class="w3-button w3-red w3-tiny" onclick="javascript:stopPlayerz()">stop</button>&nbsp;&nbsp;
+			<div class="w3-show-inline-block">
+			<button class="w3-btn w3-black w3-round-large end w3-small"><img src="equalizers.gif"></button>
+			<button class="w3-btn w3-black w3-round-large start w3-small"><img src="equalizer.gif"></button>
+        </div>
+		</div>
+    </div> -->
+<div class="w3-container m1">
+  <p>1 Glory to God on high !<br/>
+    Let heaven and earth reply,<br/>
+    Praise ye His name ! <br/>
+    His love and grace adore,<br/>
+    Who all our sorrows bore ;<br/>
+    Sing loud for evermore,<br/>
+    Worthy the Lamb !<br/>
+    <br/>
+    2 While they around the throne<br/>
+    Cheerfully join in one,<br/>
+    Praising His name, <br/>
+    Ye who have felt His blood<br/>
+    Sealing your peace with God,<br/>
+    Sound His dear name abroad !<br/>
+    Worthy the Lamb ! <br/>
+    <br/>
+    3 Join,all ye ransomed race,<br/>
+    Our Lord and God to bless;<br/>
+    Praise ye His name !<br/>
+    In Him we will rejoice,<br/>
+    And make a joyful noise,<br/>
+    Shouting with heart and voice,<br/>
+    Worthy the Lamb !  <br/>
+    <br/>
+    4 What though we change our place,<br/>
+    Yet we shall never cease<br/>
+    Praising His name ;<br/>
+    Creation, Providence, Redemption<br/>
+    To Him our songs we bring,<br/>
+    Hail Him our graciousKing,<br/>
+    And without ceasing sing,<br/>
+    Worthy the Lamb ! <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(7)){
+	if (localStorage.getItem(7).toString() == '7'){
+		localStorage.setItem(7, '0');
+	}else{
+		localStorage.setItem(7, '7');
+	}
+}else{
+	localStorage.setItem(7, '7');
+}
+}
+
+if (localStorage.getItem(7).toString() == '7'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

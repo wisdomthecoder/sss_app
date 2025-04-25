@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Behold, the Bridegroom cometh in<br/>
+            the middle of the night,<br/>
+            And blest is he whose loins are girt,<br/>
+            whose lamp is burning bright;<br/>
+            But woe to that dull servant whom<br/>
+            the Master shall surprise<br/>
+            With lamp untrimmed, unburning,<br/>
+            and with slumber in his eyes.<br/>
+            <br/>
+            2 Do thou, my soul, keep watch, beware<br/>
+            lest thou in sleep sink down,<br/>
+            Lest thou be given o'er to death, and<br/>
+            lose the golden crown;<br/>
+            But see that thou art sober, with a<br/>
+            watchful eye, and thus<br/>
+            Cry, Holy, Holy, Holy God, have<br/>
+            mercy upon us.<br/>
+            <br/>
+            3 That day, the day of fear, shall come;<br/>
+            my soul, slack not thy toil,<br/>
+            But light thy lamp, and feed it well,<br/>
+            and make it bright with oil;<br/>
+            Thou knowest not how soon may<br/>
+            sound the cry at eventide:<br/>
+            Behold the Bridegroom comes !<br/>
+            Arise, go forth to meet the<br/>
+            Bride !<br/>
+            <br/>
+            4 Beware, my soul ! take thou good<br/>
+            heed lest thou in slumber lie,<br/>
+            And, like the five, remain without,<br/>
+            and knock, and vainly cry;<br/>
+            But watch, and bear thy lamp un-<br/>
+            dimmed, and Christ shall gird thee on<br/>
+            His own bright wedding-robe of<br/>
+            light—the glory of the Son.<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(175)){
+	if (localStorage.getItem(175).toString() == '175'){
+		localStorage.setItem(175, '0');
+	}else{
+		localStorage.setItem(175, '175');
+	}
+}else{
+	localStorage.setItem(175, '175');
+}
+}
+
+if (localStorage.getItem(175).toString() == '175'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

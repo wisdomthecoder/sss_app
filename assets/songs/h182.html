@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+
+<div class="w3-container m1">
+  <p>1 The Lord is coming by-and-by : <br/>
+            Be ready when He comes ! <br/>
+            He comes from His fair home on high : <br/>
+            Be ready when He comes !<br/>
+            He h the Lord our Righteousness, <br/>
+            And comes His chosen ones to bless, <br/>
+            And at His Father's throne confess : 
+            
+            <div class="chorus">
+            Be ready when He comes ! <br/>
+            Will you be ready when the Bridegroom comes ? . . . <br/>
+            Will you be ready when the Bridegroom comes ? . , . <br/>
+            Will your lamps be trimmed and bright, <br/>
+            Be it morning, noon, or night ? <br/>
+            Will you be ready when the Bridegroom comes ? 
+          </div>
+          
+            2 He soon will come to earth again : <br/>
+            Be ready when He comes ! <br/>
+            Begin His universal reign : <br/>
+            Be ready when He comes ! <br/>
+            With hallelujahs heaven will ring, <br/>
+            When Jesus doth redemption bring; <br/>
+            Oh, trim your lamps to meet your King !<br/>
+            Be ready when He comes ! <br/>
+            <br/>
+            3 Behold ! He comes to one and all : <br/>
+            Be ready when He comes ! <br/>
+            And soon we'll hear the trumpet call : <br/>
+            Be ready when He comes ! <br/>
+            To Judgment called at His command, <br/>
+            From every clime, from every land, <br/>
+            Before His throne we all must stand : <br/>
+            Be ready when He comes ! <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(182)){
+	if (localStorage.getItem(182).toString() == '182'){
+		localStorage.setItem(182, '0');
+	}else{
+		localStorage.setItem(182, '182');
+	}
+}else{
+	localStorage.setItem(182, '182');
+}
+}
+
+if (localStorage.getItem(182).toString() == '182'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

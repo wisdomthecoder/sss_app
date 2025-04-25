@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Jesus, my Saviour, to Bethlehem came,<br/>
+    Born in a manger to sorrow and shame;<br/>
+    Oh, it was wonderful-- blest be His name!<br/>
+    Seeking for me, for me!<br/>
+    Seeking for me ! for me ! . .<br/>
+    Seeking for me ! for me ! . .<br/>
+    Oh, it was wonderful-- blest be His name<br/>
+    Seeking for me, for me !<br/>
+    <br/>
+    2 Jesus, my Saviour, on Calvary's tree,<br/>
+    Paid the great debt, and my soul He set free;<br/>
+    Oh, it was wonderful-- how could it be?--<br/>
+    Dying for me, for me !<br/>
+    Dying for me ! for me ! . .<br/>
+    Dying for me ! for me ! . .<br/>
+    Oh, it was wonderful-- how could it be ?--<br/>
+    Dying for me, for me !<br/>
+    <br/>
+    3 Jesus, my Saviour, the same as of old,<br/>
+    While I was wand'ring afar from the fold,<br/>
+    Gently and long did He plead with my soul,<br/>
+    Calling for me, for me !<br/>
+    Calling for me ! for me ! . .<br/>
+    Calling for me ! for me ! . .<br/>
+    Gently and long did He plead with my soul,<br/>
+    Calling for me, for me !<br/>
+    <br/>
+    4 Jesus, my Saviour, shall come from on high--<br/>
+    Sweet is the promise as weary years fly ;<br/>
+    Oh, I shall see Him descend from the sky,<br/>
+    Coming for me, for me !<br/>
+    Coming for me ! for me ! . .<br/>
+    Coming for me ! for me ! . .<br/>
+    Oh, I shall see Him descend from the sky,<br/>
+    Coming for me, for me!<br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(40)){
+	if (localStorage.getItem(40).toString() == '40'){
+		localStorage.setItem(40, '0');
+	}else{
+		localStorage.setItem(40, '40');
+	}
+}else{
+	localStorage.setItem(40, '40');
+}
+}
+
+if (localStorage.getItem(40).toString() == '40'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+<div class="w3-container m1">
+  <p>1 In tenderness He sought me, <br/>
+    Weary and sick with sin, <br/>
+    And on His shoulders brought me <br/>
+    Back to His fold again ; <br/>
+    While angels in His presence sang <br/>
+    Until the courts of heaven rang. 
+    <div class="chorus">
+    Oh, the love that sought me ! <br/>
+    Oh, the blood that bought me ! <br/>
+    Oh, the grace that brought me to the fold ! <br/>
+    Wondrous grace that brought me to the fold ! </div>
+
+    2 lie found me bruised and dying, <br/>
+    And poured in oil and wine ; <br/>
+    He whispered to assure me, <br/>
+    I've found thee — thou art <br/>
+    Mine ! <br/>
+    I never heard a sweeter voice, <br/>
+    It made my aching heart rejoice ! <br/>
+    <br/>
+    3 He pointed to the nail-prints, <br/>
+    For me His blood was shed ; <br/>
+    A mocking crown so thorny <br/>
+    Was placed upon His head, <br/>
+    I wondered what He saw in me <br/>
+    To suffer such deep agony. <br/>
+    <br/>
+    4 Fro sitting in His presence, <br/>
+    The sunshine of His face, <br/>
+    While with adoring wonder <br/>
+    His blessings I retrace. <br/>
+    It seems as if eternal days <br/>
+    Are far too short to sound His praise. <br/>
+    <br/>
+    5 So while the hours are passing, <br/>
+    All now is perfect rest ; <br/>
+    I'm waiting for the morning, <br/>
+    The brightest and the best, <br/>
+    When He will call us to His side, <br/>
+    To be with Him, His spotless Bride. <br/></p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(59)){
+	if (localStorage.getItem(59).toString() == '59'){
+		localStorage.setItem(59, '0');
+	}else{
+		localStorage.setItem(59, '59');
+	}
+}else{
+	localStorage.setItem(59, '59');
+}
+}
+
+if (localStorage.getItem(59).toString() == '59'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+<script src="hscript.js"></script></body>

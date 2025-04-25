@@ -34,6 +34,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/
+    - assets/songs/
   fonts:
     - family: SFUIDisplay
       fonts:

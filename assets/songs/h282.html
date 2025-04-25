@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-teal.css">
+<link rel="stylesheet" href="stylew.css" />
+
+
+<div class="w3-container m1">
+  <p>1 Thou art coming, O my Saviour <br/>
+            Thou art coming, O my King ! <br/>
+            Every tongue Thy name confessing, <br/>
+            Well may we rejoice and sing ! <br/>
+            Thou art coming ! Rays of glory <br/>
+            Thro' the vail Thy death has rent <br/>
+            Gladden now our pilgrim pathway, <br/>
+            Glory from Thy presence sent. 
+            
+            <div class="chorus">
+            Thou art coming ! Thou art coming <br/>
+            We shall meet Thee on Thy way ! <br/>
+            Thou art coming ! we shall see Thee, <br/>
+            And be like Thee on that day ! <br/>
+            Thou art coming ! Thou art coming I <br/>
+            Jesus, our beloved Lord ! <br/>
+            Oh, the joy to see Thee reigning, <br/>
+            Worshipped, glorified, adored ! 
+          </div>
+          
+            2 Thou art coming ! Not a shadow, <br/>
+            Not a mist, and not a tear, <br/>
+            Not a sin, and not a sorrow, <br/>
+            On that sunrise grand and clear: <br/>
+            Thou art coming ! Jesus, Saviour, <br/>
+            Nothing else seems worth a thought ; <br/>
+            Oh, how marvellous the glory <br/>
+            And the bliss Thy pain hath bought. <br/>
+            <br/>
+            3 Thou art coming ! We are waiting <br/>
+            With a  hope  that cannot fail, <br/>
+            Asking not the day or hour, <br/>
+            Anchored safe within the vail. <br/>
+            Thou art coming ! At Thy table <br/>
+            We are witnesses for this, <br/>
+            As we meet Thee in communion, <br/>
+            Earnest of our coming bliss.</p>
+</div>
+<script>
+function mm1(){
+if (localStorage.getItem(282)){
+	if (localStorage.getItem(282).toString() == '282'){
+		localStorage.setItem(282, '0');
+	}else{
+		localStorage.setItem(282, '282');
+	}
+}else{
+	localStorage.setItem(282, '282');
+}
+}
+
+if (localStorage.getItem(282).toString() == '282'){
+	document.getElementById("btns").style.color = "blue";
+	document.getElementById("image").src = "stars1.png";
+}else{
+	document.getElementById("btns").style.color = "white";
+	document.getElementById("image").src = "stars.png";
+}
+function bbbb(){
+if (document.getElementById("btns").style.color == "blue"){document.getElementById("btns").style.color = "white"; document.getElementById("image").src = "stars.png";}
+else{document.getElementById("btns").style.color = "blue"; document.getElementById("image").src = "stars1.png";}
+}
+</script>
+
+<script src="hscript.js"></script></body>
