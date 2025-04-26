@@ -1,8 +1,14 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:sss_app/config/utils.dart';
-import 'package:sss_app/view/desktop/top_tile/top_tile_view.dart';
-import 'package:sss_app/view/desktop/widgets/footer.dart';
-import 'package:sss_app/view/desktop/side_bar/side_bar.dart';
+import 'package:sss_app/module/desktop/controller/desktop_hymn_controller.dart';
+import 'package:sss_app/module/desktop/modules/main_bar/view/main_bar_view.dart';
+import 'package:sss_app/module/desktop/modules/top_tile/top_tile_view.dart';
+import 'package:sss_app/module/desktop/modules/widgets/footer.dart';
+import 'package:sss_app/module/desktop/modules/side_bar/view/side_bar.dart';
 import 'package:window_manager/window_manager.dart';
 
 class DesktopHome extends StatefulWidget {
@@ -25,6 +31,7 @@ class _DesktopHomeState extends State<DesktopHome> {
   bool isFullScreen = false;
   @override
   Widget build(BuildContext context) {
+    var c = Get.put(DesktopHymnController());
     return Scaffold(
         body: Container(
       decoration: BoxDecoration(
@@ -33,7 +40,7 @@ class _DesktopHomeState extends State<DesktopHome> {
               end: Alignment.bottomCenter,
               colors: [
             Colors.teal,
-            Colors.teal.shade50,
+            Colors.greenAccent,
           ])),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -52,12 +59,21 @@ class _DesktopHomeState extends State<DesktopHome> {
                   padding: EdgeInsets.symmetric(horizontal: 8),
                 ),
                 Expanded(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(15),
-                          bottomLeft: Radius.circular(15)),
-                      color: Colors.white,
+                  child: ClipRect(
+                    child: BackdropFilter(
+                      filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+                      child: Obx(
+                        () => Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(15.0.obs.value),
+                                bottomLeft: Radius.circular(15)),
+                            color: const Color.fromARGB(200, 255, 255, 255),
+                          ),
+                          padding: EdgeInsets.all(15),
+                          child: c.views.last,
+                        ),
+                      ),
                     ),
                   ),
                 )

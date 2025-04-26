@@ -13,6 +13,7 @@ dependencies:
   flutter_acrylic: ^1.1.4
   window_manager: ^0.4.3
   get: ^4.6.6
+  shared_preferences: ^2.5.3
 
 dev_dependencies:
   flutter_test:
@@ -35,6 +36,7 @@ flutter:
   assets:
     - assets/
     - assets/songs/
+    - assets/data/
   fonts:
     - family: SFUIDisplay
       fonts:

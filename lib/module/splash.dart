@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sss_app/config/utils.dart';
-import 'package:sss_app/view/desktop/home.dart';
+import 'package:sss_app/module/desktop/modules/home_view.dart';
 import 'package:window_manager/window_manager.dart';
 
 class Splash extends StatelessWidget {
@@ -12,7 +12,8 @@ class Splash extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // windowManager.setSize(Size(300, 300));
+    windowManager.setAlignment(Alignment.center);
+    windowManager.setSize(Size(300, 300));
 
     Timer(Duration(seconds: 3), () {
       Get.offAll(DesktopHome());

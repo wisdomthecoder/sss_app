@@ -29,19 +29,23 @@ class DefaultIndex {
 class Index {
   String id;
   String title;
+  String? hymn;
 
   Index({
     required this.id,
     required this.title,
+    this.hymn,
   });
 
   factory Index.fromJson(Map<String, dynamic> json) => Index(
         id: json["id"],
+        hymn: json["hymn"],
         title: json["title"],
       );
 
   Map<String, dynamic> toJson() => {
         "id": id,
+        "hymn": hymn,
         "title": title,
       };
 }

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/instance_manager.dart';
 import 'package:sss_app/model/hymn.dart';
+import 'package:sss_app/module/desktop/controller/desktop_hymn_controller.dart';
+import 'package:sss_app/module/desktop/modules/main_bar/view/hymn_view.dart';
 
 class HymnTile extends StatelessWidget {
   const HymnTile(this.hymn, {super.key});
@@ -23,12 +26,15 @@ class HymnTile extends StatelessWidget {
         ),
         trailing: Icon(Icons.favorite_outline),
         leading: Text(
-          hymn.hymnNum.toString(),
+          hymn.id.toString(),
           textAlign: TextAlign.center,
           style: TextStyle(
             fontWeight: FontWeight.bold,
           ),
         ),
+        onTap: () {
+          Get.find<DesktopHymnController>().views.add(HymnView(hymn));
+        },
         title: Text(
           hymn.title,
         ),

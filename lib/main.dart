@@ -4,7 +4,8 @@ import 'package:flutter_acrylic/flutter_acrylic.dart' as flutter_acrylic;
 import 'package:flutter_acrylic/window_effect.dart';
 import 'package:get/get.dart';
 import 'package:sss_app/config/utils.dart';
-import 'package:sss_app/view/splash.dart';
+import 'package:sss_app/data/shared_pref.dart';
+import 'package:sss_app/module/splash.dart';
 import 'package:window_manager/window_manager.dart';
 
 const String appTitle = 'Win UI for Flutter';
@@ -20,6 +21,7 @@ bool get isDesktop {
 }
 
 void main() async {
+  await AppStorage.init();
   WidgetsFlutterBinding.ensureInitialized();
 
   // if it's not on the web, windows or android, load the accent color
@@ -59,7 +61,10 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       home: Splash(),
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.teal,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
+        dividerColor: Colors.black12,
+        useMaterial3: true,
         fontFamily: "SFUIDisplay",
       ),
     );
