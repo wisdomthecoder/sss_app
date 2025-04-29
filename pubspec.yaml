@@ -39,6 +39,7 @@ flutter:
     - assets/
     - assets/songs/
     - assets/data/
+    - assets/songs/tune/
   fonts:
     - family: SFUIDisplay
       fonts:
