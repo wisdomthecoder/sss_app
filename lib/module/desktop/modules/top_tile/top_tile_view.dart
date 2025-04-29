@@ -12,43 +12,63 @@ class TopTileView extends StatelessWidget {
     return Container(
       child: Row(
         children: [
+          SizedBox(width: 20),
           SizedBox(
-            width: 200,
-            height: 50,
-            child: ElevatedButton(
-                onPressed: () {
-                  c.newHymn();
-                },
-                child: Text("NEW Hymn")),
-          ),
-          Spacer(),
-          Center(
-            child: Positioned(
-              top: 0,
-              left: 0,
-              child: OutlinedButton(
+            height: 40,
+            child: Row(
+              spacing: 10,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                ElevatedButton.icon(
                   onPressed: () {
-                    Navigator.of(context).pop(); // Close the current screen
-                    SystemNavigator.pop(); // Close the app
+                    c.newHymn();
                   },
-                  style: OutlinedButton.styleFrom(
-                      padding:
-                          EdgeInsets.symmetric(vertical: 15, horizontal: 60),
+                  style: ElevatedButton.styleFrom(
+                      padding: EdgeInsets.symmetric(horizontal: 20),
                       shape: RoundedRectangleBorder(
-                          side: BorderSide(
-                            color: Colors.white,
-                            width: 2,
-                          ),
-                          borderRadius: BorderRadius.circular(5))),
-                  child: Text(
-                    "Exit",
-                    style: TextStyle(
-                        fontSize: 18,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500),
-                  )),
+                          borderRadius: BorderRadius.circular(10))),
+                  label: Text("New Hymn"),
+                  icon: Icon(Icons.add),
+                ),
+                ElevatedButton.icon(
+                  onPressed: () {
+                    c.newHymn();
+                  },
+                  style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.white,
+                      padding: EdgeInsets.symmetric(horizontal: 20),
+                      backgroundColor: Colors.transparent,
+                      side: BorderSide(width: 1, color: Colors.white),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10))),
+                  label: Text("Favorites"),
+                  icon: Icon(Icons.favorite),
+                ),
+              ],
             ),
           ),
+          Spacer(),
+          ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop(); // Close the current screen
+                SystemNavigator.pop(); // Close the app
+              },
+              style: ElevatedButton.styleFrom(
+                  padding: EdgeInsets.symmetric(vertical: 15, horizontal: 60),
+                  backgroundColor: Colors.transparent,
+                  shape: RoundedRectangleBorder(
+                      side: BorderSide(
+                        color: Colors.white,
+                        width: 2,
+                      ),
+                      borderRadius: BorderRadius.circular(5))),
+              child: Text(
+                "Exit",
+                style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w500),
+              )),
           Spacer(),
         ],
       ),

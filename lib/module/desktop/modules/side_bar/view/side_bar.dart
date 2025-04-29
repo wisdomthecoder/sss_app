@@ -31,7 +31,8 @@ class SidePanel extends StatelessWidget {
               separatorBuilder: (context, index) => SizedBox(height: 10),
               itemBuilder: (context, index) => HymnTile(Hymn(
                   id: int.parse(c.filteredIndices[index].id.trim()),
-                  hymn: c.filteredIndices[index].hymn ?? '',
+                  hymn: c.filteredIndices[index].hymn ??
+                      'assets/songs/h${c.filteredIndices[index].id}.hnf',
                   title: c.filteredIndices[index].title)),
               itemCount: c.filteredIndices.length,
             ));

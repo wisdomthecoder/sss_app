@@ -23,6 +23,7 @@ class _DesktopHomeState extends State<DesktopHome> {
   void initState() {
     WidgetsBinding.instance.addPostFrameCallback((e) {
       windowManager.maximize();
+      windowManager.setResizable(false);
       windowManager.setTitleBarStyle(TitleBarStyle.normal);
     });
     super.initState();

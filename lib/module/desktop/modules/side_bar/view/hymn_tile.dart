@@ -5,8 +5,9 @@ import 'package:sss_app/module/desktop/controller/desktop_hymn_controller.dart';
 import 'package:sss_app/module/desktop/modules/main_bar/view/hymn_view.dart';
 
 class HymnTile extends StatelessWidget {
-  const HymnTile(this.hymn, {super.key});
+  const HymnTile(this.hymn, {this.path, super.key});
   final Hymn hymn;
+  final String? path;
 
   @override
   Widget build(BuildContext context) {
