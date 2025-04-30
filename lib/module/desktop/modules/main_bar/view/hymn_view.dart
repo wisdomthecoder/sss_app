@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/instance_manager.dart';
@@ -34,7 +35,13 @@ class HymnView extends StatelessWidget {
                 Text(
                   hymn.title,
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
-                )
+                ),
+                IconButton(
+                    onPressed: () {
+                      Process.run('cmd',
+                          ['/c', 'start', 'assets/songs/tune/a0002.mp3']);
+                    },
+                    icon: Icon(Icons.play_arrow))
               ],
             ),
           ),
