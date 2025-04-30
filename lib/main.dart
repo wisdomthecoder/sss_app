@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_acrylic/flutter_acrylic.dart' as flutter_acrylic;
 import 'package:flutter_acrylic/window_effect.dart';
 import 'package:get/get.dart';
+import 'package:sss_app/config/theme/my_theme.dart';
 import 'package:sss_app/config/utils.dart';
 import 'package:sss_app/data/shared_pref.dart';
 import 'package:sss_app/module/splash.dart';
@@ -60,6 +61,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       home: Splash(),
+
       theme: ThemeData(
         primarySwatch: Colors.teal,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
@@ -67,6 +69,29 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: "SFUIDisplay",
       ),
+      title: "Abasu",
+      useInheritedMediaQuery: true,
+      debugShowCheckedModeBanner: false,
+
+      builder: (context, widget) {
+        bool themeIsLight = AppStorage.getThemeIsLight();
+        return Theme(
+          data: MyTheme.getThemeData(isLight: themeIsLight),
+          child: MediaQuery(
+            data: MediaQuery.of(context)
+                .copyWith(textScaler: const TextScaler.linear(1.0)),
+            child: widget!,
+          ),
+        );
+      },
+
+      defaultTransition: Transition.cupertino,
+
+      transitionDuration: Duration(seconds: 1),
+      // app screens
+      // locale: MySharedPref.getCurrentLocal(),
+      // app language
+      // translations: LocalizationService.getInstance(), //
     );
   }
 }

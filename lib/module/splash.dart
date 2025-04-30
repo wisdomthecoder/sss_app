@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sss_app/config/utils.dart';
 import 'package:sss_app/module/desktop/modules/home_view.dart';
+import 'package:sss_app/module/desktop/modules/side_bar/controller/side_bar_controller.dart';
 import 'package:window_manager/window_manager.dart';
 
 class Splash extends StatelessWidget {
@@ -18,6 +19,9 @@ class Splash extends StatelessWidget {
     Timer(Duration(seconds: 3), () {
       Get.offAll(DesktopHome());
     });
+    //Process Code before Viewing
+    var c = Get.put(SideBarController());
+
     return Scaffold(
       body: Center(
         child: Column(

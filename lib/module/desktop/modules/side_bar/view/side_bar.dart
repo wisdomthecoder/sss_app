@@ -13,7 +13,7 @@ class SidePanel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var c = Get.put(SideBarController());
+    var c = Get.find<SideBarController>();
     return Column(
       spacing: 10,
       children: [

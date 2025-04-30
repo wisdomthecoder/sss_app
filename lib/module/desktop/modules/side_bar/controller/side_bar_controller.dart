@@ -27,10 +27,10 @@ class SideBarController extends GetxController {
   RxList<Index> filteredIndices = <Index>[].obs;
   RxBool isLoading = true.obs;
 
-  getIndex() async {
+  getIndex([favourites = false]) async {
     isLoading.value = true;
     List<Hymn> localHymnIndex = <Hymn>[
-      ...AppStorage.getBookmarks().map((e) => Hymn.fromJson(jsonDecode(e)))
+      ...AppStorage.getLocalHymn().map((e) => Hymn.fromJson(jsonDecode(e)))
     ];
     try {
       await rootBundle.rootBundle
@@ -43,7 +43,14 @@ class SideBarController extends GetxController {
               Index(id: e.id?.toString() ?? "0", hymn: e.hymn, title: e.title)),
           ...data.indices
         ];
-        filteredIndices.value = indices;
+        if (favourites == true) {
+          filteredIndices.value = [
+            ...indices.where((e) => AppStorage.getFavorites()
+                .any((fav) => fav.contains(e.id.toString() + e.title)))
+          ];
+        } else {
+          filteredIndices.value = indices;
+        }
         isLoading.value = false;
       });
     } catch (e) {

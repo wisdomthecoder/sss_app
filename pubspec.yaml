@@ -17,6 +17,7 @@ dependencies:
   desktop_multi_window: ^0.2.1
   screen_retriever: ^0.2.0
   process_run: ^1.2.4
+  flutter_screenutil: ^5.9.3
 
 dev_dependencies:
   flutter_test:

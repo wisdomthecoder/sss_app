@@ -55,7 +55,7 @@ class _DesktopHomeState extends State<DesktopHome> {
             child: Row(
               children: [
                 Container(
-                  width: isFullScreen ? 0 : width(context) / 4,
+                  width: isFullScreen ? 0 : width(context) / 3.5,
                   child: SidePanel(),
                   padding: EdgeInsets.symmetric(horizontal: 8),
                 ),
@@ -69,7 +69,8 @@ class _DesktopHomeState extends State<DesktopHome> {
                             borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(15.0.obs.value),
                                 bottomLeft: Radius.circular(15)),
-                            color: const Color.fromARGB(200, 255, 255, 255),
+                            color: Get.theme.scaffoldBackgroundColor
+                                .withOpacity(.8),
                           ),
                           padding: EdgeInsets.all(15),
                           child: c.views.last,

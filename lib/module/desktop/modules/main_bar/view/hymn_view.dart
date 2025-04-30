@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/instance_manager.dart';
 import 'package:get/utils.dart';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:sss_app/data/tunes.dart';
 import 'package:sss_app/model/hymn.dart';
 import 'package:sss_app/module/desktop/controller/desktop_hymn_controller.dart';
 import 'package:sss_app/module/desktop/modules/side_bar/model/index.dart';
@@ -36,12 +37,30 @@ class HymnView extends StatelessWidget {
                   hymn.title,
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                 ),
-                IconButton(
-                    onPressed: () {
-                      Process.run('cmd',
-                          ['/c', 'start', 'assets/songs/tune/a0002.mp3']);
-                    },
-                    icon: Icon(Icons.play_arrow))
+                if (defaultTunes
+                    .any((e) => e.contains(hymn.id.toString().padLeft(4, '0'))))
+                  ElevatedButton.icon(
+                      label: Text("Play Tune"),
+                      style: ElevatedButton.styleFrom(
+                          elevation: 0,
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10))),
+                      onPressed: () {
+                        if (Platform.isWindows) {
+                          Process.run('cmd', [
+                            '/c',
+                            'start',
+                            'assets/songs/tune/a${(hymn.id.toString()).padLeft(4, '0')}.mp3'
+                          ]);
+                        } else if (Platform.isLinux) {
+                          Process.run('open', [
+                            'assets/songs/tune/a${(hymn.id.toString()).padLeft(4, '0')}.mp3'
+                          ]);
+                        } else if (Platform.isMacOS) {
+                          Process.run('open', ['assets/songs/tune/a0002.mp3']);
+                        }
+                      },
+                      icon: Icon(Icons.play_arrow))
               ],
             ),
           ),
